@@ -13,6 +13,7 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import com.holo.App;
 import com.holo.concurrent.lock.LockManager;
+import com.holo.concurrent.lock.SimpleLockManager;
 
 /**
  * @author Holo
@@ -26,7 +27,7 @@ public class LockAnnotationTest{
     private LockService lockService;
 
     @Autowired
-    private LockManager lockManager;
+    private SimpleLockManager lockManager;
 
     @Test
     public void testLock() throws InterruptedException {
