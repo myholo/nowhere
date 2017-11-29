@@ -15,6 +15,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RestController;
 
 import com.holo.common.exception.HoException;
 import com.holo.common.util.Json;
@@ -25,7 +26,9 @@ import com.holo.service.impl.UserServiceImpl;
  * @author Holo
  *
  */
-public class UserTestController {
+@RestController
+@RequestMapping(value="/aa") 
+public class UserRestController {
 	@Autowired
 	UserServiceImpl userServiceImpl;
 	@RequestMapping(value="/login",method=RequestMethod.POST)
@@ -39,5 +42,10 @@ public class UserTestController {
 		Map<String,Object> ret=new HashMap<String, Object>();
 		ret.put("user",user2session);
 		return new Json(true,"登录成功！",ret);
+	}
+	
+	@RequestMapping(value="/xxx",method=RequestMethod.GET)
+	public Json xxx(){
+		return new Json(true,"登录成功！");
 	}
 }

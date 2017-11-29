@@ -20,7 +20,7 @@ public class MinaClientIoHandler extends IoHandlerAdapter{
 	private final Log logger = LogFactory.getLog(getClass());
 	
 	/**
-	 * 关闭连接
+	 * 关闭连接	
 	 * @param session
 	 * @throws Exception
 	 */
