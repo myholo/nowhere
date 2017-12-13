@@ -1,0 +1,54 @@
+<!-- MAIN CONTENT -->
+<div id="content">
+    <h1>用户</h1>
+    <p>
+        这里是用户说明
+    </p>
+    <div class="row">
+        <table class="table table-bordered table-striped table-hover smart-form" style="margin-bottom: 110px;">
+            <thead>
+            <tr>
+                <th>名称</th>
+                <th>内容</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>序号</td>
+                <td>{{obj.id}}</td>
+            </tr>
+            <tr>
+                <td>创建时间</td>
+                <td>{{obj.gmtCreateString}}</td>
+            </tr>
+            <tr>
+                <td>账号</td>
+                <td>{{obj.username}}</td>
+            </tr>
+            <tr>
+                <td>呢称</td>
+                <td>{{obj.nickname}}</td>
+            </tr>
+            <tr>
+                <td>角色</td>
+                <td>{{obj.roleIdString}}</td>
+            </tr>
+            <tr>
+                <td>状态</td>
+                <td>{{obj.statusString}}</td>
+            </tr>
+            </tbody>
+        </table>
+
+        <h2 class="row-seperator-header">会员</h2>
+        <div class="well">
+            <div class="well">
+                Large well
+                <br>
+                <code>内容</code>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!-- END MAIN CONTENT -->

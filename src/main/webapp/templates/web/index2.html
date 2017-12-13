@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+<#include "/pages/global/jscss.html"/>
+<link rel="stylesheet" href="${res}/css/index.css">
+<link href="${res}/css/login.css" rel="stylesheet" />
+</head>
+<meta charset="UTF-8">
+<script type="text/javascript" charset="utf-8">
+    var loginDialog;
+    var loginTabs;
+    var userLoginCombobox;
+    var userLoginCombogrid;
+    $(function() {
+
+        $('#loginDialog input').keyup(function(event) {
+            if (event.keyCode == '13') {
+                loginFun();
+            }
+        });
+
+    });
+    function loginFun() {
+		var form = $('#loginTabs').find('form');
+        if (form.form('validate')) {
+            parent.$.messager.progress({
+                title : '提示',
+                text : '登录数据处理中，请稍后....'
+            });
+            $.post('${base}/rest/user/login.html', form.serialize(), function(result) {
+                if (result.success) {
+                    window.location.href="${base}/user/index.html";
+                } else {
+                    $.messager.alert('错误', result.msg, 'error');
+                    $("#imgcaptcha").attr("src",'${base}/captcha.html?d='+new Date()*1);
+                }
+                parent.$.messager.progress('close');
+            }, "JSON");
+        }
+    }
+</script>
+<body>
+	<!-- <div id="xxx"class=" m-layer" style="top: 41px; left: 626px;display:none;">
+		<div class="zbar" id="auto-id-qlKM8hSlso4azqLH">
+			<div class="zttl">登录</div>
+		</div>
+		<div class="zcnt">
+			<div class="lyct lyct-1" id="auto-id-9uQLVaDpg5qlDoQF">
+				<div class="n-log2 n-log2-1 f-cb">
+					<div class="u-main">
+						<div class="u-plt"></div>
+						<div class="f-mgt10">
+							<a href="javascript:;" class="u-btn2 u-btn2-2"
+								data-action="login" data-type="mobile"><i>手机号登录</i></a>
+						</div>
+						<div class="f-mgt10">
+							<a href="javascript:;" class="u-btn2 u-btn2-1" data-action="reg"><i>注&#12288;册</i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<a href="javascript:openLogin();">打开登录框</a> -->
+		<div class="header-wrap">
+    <div class="inner">
+        <div class="shadow">
+            <div class="shadow-inner"></div>
+        </div>
+        <div class="logo-wrap">
+            <h2>
+            </h2>
+            <img src="${res}/img/wlc.png" alt="欢迎登录" class="wlc" />
+        </div>
+    </div>
+</div>
+<div class="content-wrap" id="loginDialog">
+    <div class="outter">
+        <div class="inner" id="loginTabs">
+            <div class="title-box">
+                <img src="${res}/img/logo3.png" alt="" />
+                <h1>易健医疗管理平台</h1>
+            </div>
+            <div class="login-box">
+                <form action="login" method="post">
+                    <div class="input-box input-username-bg">
+                        <div class="input-inner">
+                            <input type="text" name="username" id="username" placeholder="请输入用户名" value="${user.username}" autofocus />
+                        </div>
+                    </div>
+                    <div class="input-box input-password-bg">
+                        <div class="input-inner">
+                            <input type="password" name="password" id="password" placeholder="请输入密码"/>
+                        </div>
+                    </div>
+                    <div class="input-box input-password-bg">
+                        <div class="input-inner left" style="width:90px;">
+                            <input name="captcha" type="text" placeholder="请输入验证码" />
+                        </div>
+                        <div class="left" style="width:100px;">
+                            <img id="imgcaptcha" name="imgcaptcha" src="${base}/captcha.html" onclick="this.src='${base}/captcha.html?d='+new Date()*1" width="80" height="37"/>
+                        </div>
+                        <div class="left" style="width:70px;">
+                            <input type="button" value="登 录" class="login-btn" style="height: 37px;" onclick="loginFun()"/>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer-wrap">
+    <p>杭州易健医疗科技有限公司</p>
+</div>
+</body>
+<!-- <script>
+	function openLogin() {
+		document.getElementById("xxx").style.display = "";
+	}
+	function closeLogin() {
+		document.getElementById("xxx").style.display = "none";
+	}
+	<script type="text/javascript" charset="utf-8">
+    var loginDialog;
+    var loginTabs;
+    var userLoginCombobox;
+    var userLoginCombogrid;
+    $(function() {
+
+        $('#loginDialog input').keyup(function(event) {
+            if (event.keyCode == '13') {
+                loginFun();
+            }
+        });
+
+    });
+    function loginFun() {
+    	alert(1);
+		var form = $('#loginTabs').find('form');
+        if (form.form('validate')) {
+            parent.$.messager.progress({
+                title : '提示',
+                text : '登录数据处理中，请稍后....'
+            });
+            $.post('${base}/restpage/pub/login.html', form.serialize(), function(result) {
+                if (result.success) {
+                    window.location.href="${base}/user/index.html";
+                } else {
+                    $.messager.alert('错误', result.msg, 'error');
+                    $("#imgcaptcha").attr("src",'${base}/captcha.html?d='+new Date()*1);
+                }
+                parent.$.messager.progress('close');
+            }, "JSON");
+        }
+    }
+</script> -->
+</html>

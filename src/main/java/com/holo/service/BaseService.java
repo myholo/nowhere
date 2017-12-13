@@ -39,6 +39,7 @@ public class BaseService <T> {
 	 * @return 返回相应的持久化PO实例
 	 */
 	public T getFirst(User sessionUser,String where,String order,Object[] params){
+		//获得类
 		Class<T> c = (Class<T>) ((ParameterizedType) getClass().getGenericSuperclass()).getActualTypeArguments()[0];
 		String Clazz=c.getSimpleName();
 		//where=SqlUtils.whereAdd(where,permitCheckUtils.addWhere(sessionUser,Clazz));		

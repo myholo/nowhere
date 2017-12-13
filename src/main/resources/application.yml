@@ -40,7 +40,7 @@ prop:
     #/**默认的管理员密码*/
     adminpwd: admin123
     #file:///d:/opt/sts 
-    hddir: file:///E:/work/sts/trunk/src/main/webapp
+    hddir: file:///E:/git_work/nowhere/src/main/webapp
 #应用配置
   me:
   #/**辅助节点名称 空着或main表示主服务*/
@@ -196,6 +196,13 @@ spring:
     url: jdbc:mysql://PROD_MYSQL_HOST:PROD_MYSQL_PORT/PROD_MYSQL_DBNAME?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull
     username: PROD_MYSQL_USERNAME
     password: PROD_MYSQL_PWD
+  redis:
+    hostName=127.0.0.1  
+    port=6379    
+    pool.maxWait=-1    
+    pool.maxIdle=8    
+    pool.minIdle=0    
+    timeout=0  
 prop:
   my:
     name: zmax_PROD_LINUX

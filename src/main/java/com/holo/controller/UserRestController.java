@@ -27,7 +27,7 @@ import com.holo.service.impl.UserServiceImpl;
  *
  */
 @RestController
-@RequestMapping(value="/aa") 
+@RequestMapping(value="/rest") 
 public class UserRestController {
 	@Autowired
 	UserServiceImpl userServiceImpl;

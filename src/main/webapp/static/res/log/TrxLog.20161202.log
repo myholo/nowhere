@@ -1,0 +1,353 @@
+
+2016/12/02-11:29:02 TrustPayClient Java V3.0.2 交易开始==========================
+2016/12/02-11:29:02 检查交易请求是否合法：
+2016/12/02-11:29:02 正确
+2016/12/02-11:29:02 交易报文：
+2016/12/02-11:29:02 完整交易报文：
+2016/12/02-11:29:02 签名后的报文：
+2016/12/02-11:29:02 发送交易报文至网上支付平台：
+2016/12/02-11:29:02 提交网上支付平台的报文：
+                    {"Message":{"Version":"V3.0.0","Format":"JSON","Merchant":{"ECMerchantType":"EBUS","MerchantID":"103881960110060"},"TrxRequest":{"TrxType":"PayReq","PaymentType":"1","PaymentLinkType":"1","ReceiveAccount":"","ReceiveAccName":"","NotifyType":"0","ResultNotifyURL":"http://yijian.zjjnyd.com/yijian/pub/abcPay/return.html","MerchantRemarks":"","IsBreakAccount":"0","SplitAccTemplate":"","Order":{"PayTypeID":"ImmediatePay","OrderDate":"2016/11/14","OrderTime":"10:45:33","orderTimeoutDate":"20171019104901","OrderNo":"abv1205","CurrencyCode":"156","OrderAmount":"0.12","Fee":"1.0","OrderDesc":"","OrderURL":"","ReceiverAddress":"","InstallmentMark":"0","CommodityType":"0101","BuyIP":"","ExpiredDate":"30","OrderItems":[{"SubMerName":"测试二级商户1","SubMerId":"12345","SubMerMCC":"0000","SubMerchantRemarks":"测试","ProductID":"IP000001","ProductName":"中国移动IP卡","UnitPrice":"1.00","Qty":"1","ProductRemarks":"测试商品","ProductType":"充值类","ProductDiscount":"0.9","ProductExpiredDate":"10"},{"SubMerName":"测试二级商户1","SubMerId":"12345","SubMerMCC":"0000","SubMerchantRemarks":"测试","ProductID":"IP000001","ProductName":"中国联通IP卡","UnitPrice":"1.00","Qty":"2","ProductRemarks":"测试商品","ProductType":"充值类","ProductDiscount":"0.9","ProductExpiredDate":"10"}]}}},"Signature-Algorithm":"SHA1withRSA","Signature":"a29Jv3ibS0vcWpMDevJzUatxtVJCHgehlUUvPui7vC624Ggo2ZLmHISoaluor5kUHgtpXWn1cYiwrQ/YMLFkERyVTfnsSX3I3VorTt/yUS0UNirwtcArF+gwBjiBRwYGYPobyE3KJimfurIFWs3/RE1bFS0Pi68hd9WJ1Xz2byM="}
+2016/12/02-11:29:02 报文长度：1542
+2016/12/02-11:29:02 连线网上支付平台：成功
+2016/12/02-11:29:02 提交交易报文：成功
+2016/12/02-11:29:02 等待网上支付平台返回交易结果：成功
+2016/12/02-11:29:02 返回报文：
+                    HTTP/1.1 200 OKCache-Control: privateContent-Type: text/html; charset=gb2312Server: Microsoft-IIS/8.5X-AspNet-Version: 4.0.30319Set-Cookie: ASP.NET_SessionId=mzpy4ddib4x3iytjcglwg1f2; path=/; HttpOnlyX-Powered-By: ASP.NETDate: Fri, 02 Dec 2016 03:28:57 GMTConnection: closeSet-Cookie: BIGipServerpool_ebus_ebus=1499065098.65062.0000; path=/{"MSG":{"Message":{"Version":"V3.0.0","Format":"JSON","Merchant":{"ECMerchantType":"EBUS","MerchantID":"103881960110060"},"ReturnCode":"0000","ErrorMessage":"交易成功","TrxType":"PayReq","OrderNo":"abv1205","PaymentURL":"https://pay.abchina.com/ebusperbank/PaymentModeNewAct.ebf?TOKEN=14803124352854696959","OrderAmount":"0.12"},"Signature-Algorithm":"SHA1withRSA","Signature":"CnoLfhcM9x1rA8uHbugNkRiLLc2+Cxjr0QiS1+303bupltDbWG4WLBdqsZ/oOmnq29qtXpmcB8c+btf1h3W+KDsFQQPVrICORx1zKJ5N+Q+3wQSOG6zkLz9mvdvjWVoBqSm3Sduy4o4CaS0kPUW6SceTzjsBrnzFzZ8i65d8Kds="}}
+2016/12/02-11:29:02 接收报文：
+2016/12/02-11:29:02 HTTP/1.1 200 OKCache-Control: privateContent-Type: text/html; charset=gb2312Server: Microsoft-IIS/8.5X-AspNet-Version: 4.0.30319Set-Cookie: ASP.NET_SessionId=mzpy4ddib4x3iytjcglwg1f2; path=/; HttpOnlyX-Powered-By: ASP.NETDate: Fri, 02 Dec 2016 03:28:57 GMTConnection: closeSet-Cookie: BIGipServerpool_ebus_ebus=1499065098.65062.0000; path=/{"MSG":{"Message":{"Version":"V3.0.0","Format":"JSON","Merchant":{"ECMerchantType":"EBUS","MerchantID":"103881960110060"},"ReturnCode":"0000","ErrorMessage":"交易成功","TrxType":"PayReq","OrderNo":"abv1205","PaymentURL":"https://pay.abchina.com/ebusperbank/PaymentModeNewAct.ebf?TOKEN=14803124352854696959","OrderAmount":"0.12"},"Signature-Algorithm":"SHA1withRSA","Signature":"CnoLfhcM9x1rA8uHbugNkRiLLc2+Cxjr0QiS1+303bupltDbWG4WLBdqsZ/oOmnq29qtXpmcB8c+btf1h3W+KDsFQQPVrICORx1zKJ5N+Q+3wQSOG6zkLz9mvdvjWVoBqSm3Sduy4o4CaS0kPUW6SceTzjsBrnzFzZ8i65d8Kds="}}
+2016/12/02-11:29:02 验证网上支付平台响应报文的签名：正确
+2016/12/02-11:29:02 生成交易响应对象：
+2016/12/02-11:29:02 交易结果：[0000]
+2016/12/02-11:29:02 错误信息：[交易成功]
+2016/12/02-11:29:02 交易结束==================================================
+2016/12/02-11:39:00 TrustPayClient Java V3.0.2 交易开始==========================
+2016/12/02-11:39:00 检查交易请求是否合法：
+2016/12/02-11:39:00 正确
+2016/12/02-11:39:00 交易报文：
+2016/12/02-11:39:00 完整交易报文：
+2016/12/02-11:39:00 签名后的报文：
+2016/12/02-11:39:00 发送交易报文至网上支付平台：
+2016/12/02-11:39:00 提交网上支付平台的报文：
+                    {"Message":{"Version":"V3.0.0","Format":"JSON","Merchant":{"ECMerchantType":"EBUS","MerchantID":"103881960110060"},"TrxRequest":{"TrxType":"PayReq","PaymentType":"1","PaymentLinkType":"1","ReceiveAccount":"","ReceiveAccName":"","NotifyType":"0","ResultNotifyURL":"http://yijian.zjjnyd.com/yijian/pub/abcPay/return.html","MerchantRemarks":"","IsBreakAccount":"0","SplitAccTemplate":"","Order":{"PayTypeID":"ImmediatePay","OrderDate":"2016/11/14","OrderTime":"10:45:33","orderTimeoutDate":"20171019104901","OrderNo":"abv1205","CurrencyCode":"156","OrderAmount":"0.12","Fee":"1.0","OrderDesc":"","OrderURL":"","ReceiverAddress":"","InstallmentMark":"0","CommodityType":"0101","BuyIP":"","ExpiredDate":"30","OrderItems":[{"SubMerName":"测试二级商户1","SubMerId":"12345","SubMerMCC":"0000","SubMerchantRemarks":"测试","ProductID":"IP000001","ProductName":"中国移动IP卡","UnitPrice":"1.00","Qty":"1","ProductRemarks":"测试商品","ProductType":"充值类","ProductDiscount":"0.9","ProductExpiredDate":"10"},{"SubMerName":"测试二级商户1","SubMerId":"12345","SubMerMCC":"0000","SubMerchantRemarks":"测试","ProductID":"IP000001","ProductName":"中国联通IP卡","UnitPrice":"1.00","Qty":"2","ProductRemarks":"测试商品","ProductType":"充值类","ProductDiscount":"0.9","ProductExpiredDate":"10"}]}}},"Signature-Algorithm":"SHA1withRSA","Signature":"a29Jv3ibS0vcWpMDevJzUatxtVJCHgehlUUvPui7vC624Ggo2ZLmHISoaluor5kUHgtpXWn1cYiwrQ/YMLFkERyVTfnsSX3I3VorTt/yUS0UNirwtcArF+gwBjiBRwYGYPobyE3KJimfurIFWs3/RE1bFS0Pi68hd9WJ1Xz2byM="}
+2016/12/02-11:39:00 报文长度：1542
+2016/12/02-11:39:00 连线网上支付平台：成功
+2016/12/02-11:39:00 提交交易报文：成功
+2016/12/02-11:39:00 等待网上支付平台返回交易结果：成功
+2016/12/02-11:39:00 返回报文：
+                    HTTP/1.1 200 OKCache-Control: privateContent-Type: text/html; charset=gb2312Server: Microsoft-IIS/8.5X-AspNet-Version: 4.0.30319Set-Cookie: ASP.NET_SessionId=j4dxwkb4nop2xeibfjlaaypi; path=/; HttpOnlyX-Powered-By: ASP.NETDate: Fri, 02 Dec 2016 03:38:54 GMTConnection: closeSet-Cookie: BIGipServerpool_ebus_ebus=291891978.65062.0000; path=/{"MSG":{"Message":{"Version":"V3.0.0","Format":"JSON","Merchant":{"ECMerchantType":"EBUS","MerchantID":"103881960110060"},"ReturnCode":"0000","ErrorMessage":"交易成功","TrxType":"PayReq","OrderNo":"abv1205","PaymentURL":"https://pay.abchina.com/ebusperbank/PaymentModeNewAct.ebf?TOKEN=14803124352854696959","OrderAmount":"0.12"},"Signature-Algorithm":"SHA1withRSA","Signature":"CnoLfhcM9x1rA8uHbugNkRiLLc2+Cxjr0QiS1+303bupltDbWG4WLBdqsZ/oOmnq29qtXpmcB8c+btf1h3W+KDsFQQPVrICORx1zKJ5N+Q+3wQSOG6zkLz9mvdvjWVoBqSm3Sduy4o4CaS0kPUW6SceTzjsBrnzFzZ8i65d8Kds="}}
+2016/12/02-11:39:00 接收报文：
+2016/12/02-11:39:00 HTTP/1.1 200 OKCache-Control: privateContent-Type: text/html; charset=gb2312Server: Microsoft-IIS/8.5X-AspNet-Version: 4.0.30319Set-Cookie: ASP.NET_SessionId=j4dxwkb4nop2xeibfjlaaypi; path=/; HttpOnlyX-Powered-By: ASP.NETDate: Fri, 02 Dec 2016 03:38:54 GMTConnection: closeSet-Cookie: BIGipServerpool_ebus_ebus=291891978.65062.0000; path=/{"MSG":{"Message":{"Version":"V3.0.0","Format":"JSON","Merchant":{"ECMerchantType":"EBUS","MerchantID":"103881960110060"},"ReturnCode":"0000","ErrorMessage":"交易成功","TrxType":"PayReq","OrderNo":"abv1205","PaymentURL":"https://pay.abchina.com/ebusperbank/PaymentModeNewAct.ebf?TOKEN=14803124352854696959","OrderAmount":"0.12"},"Signature-Algorithm":"SHA1withRSA","Signature":"CnoLfhcM9x1rA8uHbugNkRiLLc2+Cxjr0QiS1+303bupltDbWG4WLBdqsZ/oOmnq29qtXpmcB8c+btf1h3W+KDsFQQPVrICORx1zKJ5N+Q+3wQSOG6zkLz9mvdvjWVoBqSm3Sduy4o4CaS0kPUW6SceTzjsBrnzFzZ8i65d8Kds="}}
+2016/12/02-11:39:00 验证网上支付平台响应报文的签名：正确
+2016/12/02-11:39:00 生成交易响应对象：
+2016/12/02-11:39:00 交易结果：[0000]
+2016/12/02-11:39:00 错误信息：[交易成功]
+2016/12/02-11:39:00 交易结束==================================================
+2016/12/02-11:41:31 TrustPayClient Java V3.0.2 交易开始==========================
+2016/12/02-11:41:31 检查交易请求是否合法：
+2016/12/02-11:41:31 正确
+2016/12/02-11:41:31 交易报文：
+2016/12/02-11:41:31 完整交易报文：
+2016/12/02-11:41:31 签名后的报文：
+2016/12/02-11:41:31 发送交易报文至网上支付平台：
+2016/12/02-11:41:31 提交网上支付平台的报文：
+                    {"Message":{"Version":"V3.0.0","Format":"JSON","Merchant":{"ECMerchantType":"EBUS","MerchantID":"103881960110060"},"TrxRequest":{"TrxType":"PayReq","PaymentType":"1","PaymentLinkType":"1","ReceiveAccount":"","ReceiveAccName":"","NotifyType":"0","ResultNotifyURL":"http://yijian.zjjnyd.com/yijian/pub/abcPay/return.html","MerchantRemarks":"","IsBreakAccount":"0","SplitAccTemplate":"","Order":{"PayTypeID":"ImmediatePay","OrderDate":"2016/11/14","OrderTime":"10:45:33","orderTimeoutDate":"20171019104901","OrderNo":"abv1205","CurrencyCode":"156","OrderAmount":"0.12","Fee":"1.0","OrderDesc":"","OrderURL":"","ReceiverAddress":"","InstallmentMark":"0","CommodityType":"0101","BuyIP":"","ExpiredDate":"30","OrderItems":[{"SubMerName":"测试二级商户1","SubMerId":"12345","SubMerMCC":"0000","SubMerchantRemarks":"测试","ProductID":"IP000001","ProductName":"中国移动IP卡","UnitPrice":"1.00","Qty":"1","ProductRemarks":"测试商品","ProductType":"充值类","ProductDiscount":"0.9","ProductExpiredDate":"10"},{"SubMerName":"测试二级商户1","SubMerId":"12345","SubMerMCC":"0000","SubMerchantRemarks":"测试","ProductID":"IP000001","ProductName":"中国联通IP卡","UnitPrice":"1.00","Qty":"2","ProductRemarks":"测试商品","ProductType":"充值类","ProductDiscount":"0.9","ProductExpiredDate":"10"}]}}},"Signature-Algorithm":"SHA1withRSA","Signature":"a29Jv3ibS0vcWpMDevJzUatxtVJCHgehlUUvPui7vC624Ggo2ZLmHISoaluor5kUHgtpXWn1cYiwrQ/YMLFkERyVTfnsSX3I3VorTt/yUS0UNirwtcArF+gwBjiBRwYGYPobyE3KJimfurIFWs3/RE1bFS0Pi68hd9WJ1Xz2byM="}
+2016/12/02-11:41:31 报文长度：1542
+2016/12/02-11:41:31 连线网上支付平台：成功
+2016/12/02-11:41:31 提交交易报文：成功
+2016/12/02-11:41:31 等待网上支付平台返回交易结果：成功
+2016/12/02-11:41:31 返回报文：
+                    HTTP/1.1 200 OKCache-Control: privateContent-Type: text/html; charset=gb2312Server: Microsoft-IIS/8.5X-AspNet-Version: 4.0.30319Set-Cookie: ASP.NET_SessionId=5ygwos41tbrzdzoul0m1jvld; path=/; HttpOnlyX-Powered-By: ASP.NETDate: Fri, 02 Dec 2016 03:41:25 GMTConnection: closeSet-Cookie: BIGipServerpool_ebus_ebus=1398401802.65062.0000; path=/{"MSG":{"Message":{"Version":"V3.0.0","Format":"JSON","Merchant":{"ECMerchantType":"EBUS","MerchantID":"103881960110060"},"ReturnCode":"0000","ErrorMessage":"交易成功","TrxType":"PayReq","OrderNo":"abv1205","PaymentURL":"https://pay.abchina.com/ebusperbank/PaymentModeNewAct.ebf?TOKEN=14803124352854696959","OrderAmount":"0.12"},"Signature-Algorithm":"SHA1withRSA","Signature":"CnoLfhcM9x1rA8uHbugNkRiLLc2+Cxjr0QiS1+303bupltDbWG4WLBdqsZ/oOmnq29qtXpmcB8c+btf1h3W+KDsFQQPVrICORx1zKJ5N+Q+3wQSOG6zkLz9mvdvjWVoBqSm3Sduy4o4CaS0kPUW6SceTzjsBrnzFzZ8i65d8Kds="}}
+2016/12/02-11:41:31 接收报文：
+2016/12/02-11:41:31 HTTP/1.1 200 OKCache-Control: privateContent-Type: text/html; charset=gb2312Server: Microsoft-IIS/8.5X-AspNet-Version: 4.0.30319Set-Cookie: ASP.NET_SessionId=5ygwos41tbrzdzoul0m1jvld; path=/; HttpOnlyX-Powered-By: ASP.NETDate: Fri, 02 Dec 2016 03:41:25 GMTConnection: closeSet-Cookie: BIGipServerpool_ebus_ebus=1398401802.65062.0000; path=/{"MSG":{"Message":{"Version":"V3.0.0","Format":"JSON","Merchant":{"ECMerchantType":"EBUS","MerchantID":"103881960110060"},"ReturnCode":"0000","ErrorMessage":"交易成功","TrxType":"PayReq","OrderNo":"abv1205","PaymentURL":"https://pay.abchina.com/ebusperbank/PaymentModeNewAct.ebf?TOKEN=14803124352854696959","OrderAmount":"0.12"},"Signature-Algorithm":"SHA1withRSA","Signature":"CnoLfhcM9x1rA8uHbugNkRiLLc2+Cxjr0QiS1+303bupltDbWG4WLBdqsZ/oOmnq29qtXpmcB8c+btf1h3W+KDsFQQPVrICORx1zKJ5N+Q+3wQSOG6zkLz9mvdvjWVoBqSm3Sduy4o4CaS0kPUW6SceTzjsBrnzFzZ8i65d8Kds="}}
+2016/12/02-11:41:31 验证网上支付平台响应报文的签名：正确
+2016/12/02-11:41:31 生成交易响应对象：
+2016/12/02-11:41:31 交易结果：[0000]
+2016/12/02-11:41:31 错误信息：[交易成功]
+2016/12/02-11:41:31 交易结束==================================================
+2016/12/02-11:42:32 TrustPayClient Java V3.0.2 交易开始==========================
+2016/12/02-11:42:32 检查交易请求是否合法：
+2016/12/02-11:42:32 正确
+2016/12/02-11:42:32 交易报文：
+2016/12/02-11:42:32 完整交易报文：
+2016/12/02-11:42:32 签名后的报文：
+2016/12/02-11:42:32 发送交易报文至网上支付平台：
+2016/12/02-11:42:32 提交网上支付平台的报文：
+                    {"Message":{"Version":"V3.0.0","Format":"JSON","Merchant":{"ECMerchantType":"EBUS","MerchantID":"103881960110060"},"TrxRequest":{"TrxType":"PayReq","PaymentType":"1","PaymentLinkType":"1","ReceiveAccount":"","ReceiveAccName":"","NotifyType":"0","ResultNotifyURL":"http://yijian.zjjnyd.com/yijian/pub/abcPay/return.html","MerchantRemarks":"","IsBreakAccount":"0","SplitAccTemplate":"","Order":{"PayTypeID":"ImmediatePay","OrderDate":"2016/11/14","OrderTime":"10:45:33","orderTimeoutDate":"20171019104901","OrderNo":"abv1205","CurrencyCode":"156","OrderAmount":"0.12","Fee":"1.0","OrderDesc":"","OrderURL":"","ReceiverAddress":"","InstallmentMark":"0","CommodityType":"0101","BuyIP":"","ExpiredDate":"30","OrderItems":[{"SubMerName":"测试二级商户1","SubMerId":"12345","SubMerMCC":"0000","SubMerchantRemarks":"测试","ProductID":"IP000001","ProductName":"中国移动IP卡","UnitPrice":"1.00","Qty":"1","ProductRemarks":"测试商品","ProductType":"充值类","ProductDiscount":"0.9","ProductExpiredDate":"10"},{"SubMerName":"测试二级商户1","SubMerId":"12345","SubMerMCC":"0000","SubMerchantRemarks":"测试","ProductID":"IP000001","ProductName":"中国联通IP卡","UnitPrice":"1.00","Qty":"2","ProductRemarks":"测试商品","ProductType":"充值类","ProductDiscount":"0.9","ProductExpiredDate":"10"}]}}},"Signature-Algorithm":"SHA1withRSA","Signature":"a29Jv3ibS0vcWpMDevJzUatxtVJCHgehlUUvPui7vC624Ggo2ZLmHISoaluor5kUHgtpXWn1cYiwrQ/YMLFkERyVTfnsSX3I3VorTt/yUS0UNirwtcArF+gwBjiBRwYGYPobyE3KJimfurIFWs3/RE1bFS0Pi68hd9WJ1Xz2byM="}
+2016/12/02-11:42:32 报文长度：1542
+2016/12/02-11:42:32 连线网上支付平台：成功
+2016/12/02-11:42:32 提交交易报文：成功
+2016/12/02-11:42:32 等待网上支付平台返回交易结果：成功
+2016/12/02-11:42:32 返回报文：
+                    HTTP/1.1 200 OKCache-Control: privateContent-Type: text/html; charset=gb2312Server: Microsoft-IIS/8.5X-AspNet-Version: 4.0.30319Set-Cookie: ASP.NET_SessionId=o4sjgn0hw3upc1sxjt4mgij3; path=/; HttpOnlyX-Powered-By: ASP.NETDate: Fri, 02 Dec 2016 03:42:27 GMTConnection: closeSet-Cookie: BIGipServerpool_ebus_ebus=1381624586.64550.0000; path=/{"MSG":{"Message":{"Version":"V3.0.0","Format":"JSON","Merchant":{"ECMerchantType":"EBUS","MerchantID":"103881960110060"},"ReturnCode":"0000","ErrorMessage":"交易成功","TrxType":"PayReq","OrderNo":"abv1205","PaymentURL":"https://pay.abchina.com/ebusperbank/PaymentModeNewAct.ebf?TOKEN=14803124352854696959","OrderAmount":"0.12"},"Signature-Algorithm":"SHA1withRSA","Signature":"CnoLfhcM9x1rA8uHbugNkRiLLc2+Cxjr0QiS1+303bupltDbWG4WLBdqsZ/oOmnq29qtXpmcB8c+btf1h3W+KDsFQQPVrICORx1zKJ5N+Q+3wQSOG6zkLz9mvdvjWVoBqSm3Sduy4o4CaS0kPUW6SceTzjsBrnzFzZ8i65d8Kds="}}
+2016/12/02-11:42:32 接收报文：
+2016/12/02-11:42:32 HTTP/1.1 200 OKCache-Control: privateContent-Type: text/html; charset=gb2312Server: Microsoft-IIS/8.5X-AspNet-Version: 4.0.30319Set-Cookie: ASP.NET_SessionId=o4sjgn0hw3upc1sxjt4mgij3; path=/; HttpOnlyX-Powered-By: ASP.NETDate: Fri, 02 Dec 2016 03:42:27 GMTConnection: closeSet-Cookie: BIGipServerpool_ebus_ebus=1381624586.64550.0000; path=/{"MSG":{"Message":{"Version":"V3.0.0","Format":"JSON","Merchant":{"ECMerchantType":"EBUS","MerchantID":"103881960110060"},"ReturnCode":"0000","ErrorMessage":"交易成功","TrxType":"PayReq","OrderNo":"abv1205","PaymentURL":"https://pay.abchina.com/ebusperbank/PaymentModeNewAct.ebf?TOKEN=14803124352854696959","OrderAmount":"0.12"},"Signature-Algorithm":"SHA1withRSA","Signature":"CnoLfhcM9x1rA8uHbugNkRiLLc2+Cxjr0QiS1+303bupltDbWG4WLBdqsZ/oOmnq29qtXpmcB8c+btf1h3W+KDsFQQPVrICORx1zKJ5N+Q+3wQSOG6zkLz9mvdvjWVoBqSm3Sduy4o4CaS0kPUW6SceTzjsBrnzFzZ8i65d8Kds="}}
+2016/12/02-11:42:32 验证网上支付平台响应报文的签名：正确
+2016/12/02-11:42:32 生成交易响应对象：
+2016/12/02-11:42:32 交易结果：[0000]
+2016/12/02-11:42:32 错误信息：[交易成功]
+2016/12/02-11:42:32 交易结束==================================================
+2016/12/02-11:44:10 TrustPayClient Java V3.0.2 交易开始==========================
+2016/12/02-11:44:10 检查交易请求是否合法：
+2016/12/02-11:44:10 正确
+2016/12/02-11:44:10 交易报文：
+2016/12/02-11:44:10 完整交易报文：
+2016/12/02-11:44:10 签名后的报文：
+2016/12/02-11:44:10 发送交易报文至网上支付平台：
+2016/12/02-11:44:10 提交网上支付平台的报文：
+                    {"Message":{"Version":"V3.0.0","Format":"JSON","Merchant":{"ECMerchantType":"EBUS","MerchantID":"103881960110060"},"TrxRequest":{"TrxType":"PayReq","PaymentType":"1","PaymentLinkType":"1","ReceiveAccount":"","ReceiveAccName":"","NotifyType":"0","ResultNotifyURL":"http://yijian.zjjnyd.com/yijian/pub/abcPay/return.html","MerchantRemarks":"","IsBreakAccount":"0","SplitAccTemplate":"","Order":{"PayTypeID":"ImmediatePay","OrderDate":"2016/11/14","OrderTime":"10:45:33","orderTimeoutDate":"20171019104901","OrderNo":"abv1205","CurrencyCode":"156","OrderAmount":"0.12","Fee":"1.0","OrderDesc":"","OrderURL":"","ReceiverAddress":"","InstallmentMark":"0","CommodityType":"0101","BuyIP":"","ExpiredDate":"30","OrderItems":[{"SubMerName":"测试二级商户1","SubMerId":"12345","SubMerMCC":"0000","SubMerchantRemarks":"测试","ProductID":"IP000001","ProductName":"中国移动IP卡","UnitPrice":"1.00","Qty":"1","ProductRemarks":"测试商品","ProductType":"充值类","ProductDiscount":"0.9","ProductExpiredDate":"10"},{"SubMerName":"测试二级商户1","SubMerId":"12345","SubMerMCC":"0000","SubMerchantRemarks":"测试","ProductID":"IP000001","ProductName":"中国联通IP卡","UnitPrice":"1.00","Qty":"2","ProductRemarks":"测试商品","ProductType":"充值类","ProductDiscount":"0.9","ProductExpiredDate":"10"}]}}},"Signature-Algorithm":"SHA1withRSA","Signature":"a29Jv3ibS0vcWpMDevJzUatxtVJCHgehlUUvPui7vC624Ggo2ZLmHISoaluor5kUHgtpXWn1cYiwrQ/YMLFkERyVTfnsSX3I3VorTt/yUS0UNirwtcArF+gwBjiBRwYGYPobyE3KJimfurIFWs3/RE1bFS0Pi68hd9WJ1Xz2byM="}
+2016/12/02-11:44:10 报文长度：1542
+2016/12/02-11:44:10 连线网上支付平台：成功
+2016/12/02-11:44:10 提交交易报文：成功
+2016/12/02-11:44:10 等待网上支付平台返回交易结果：成功
+2016/12/02-11:44:11 返回报文：
+                    HTTP/1.1 200 OKCache-Control: privateContent-Type: text/html; charset=gb2312Server: Microsoft-IIS/8.5X-AspNet-Version: 4.0.30319Set-Cookie: ASP.NET_SessionId=jpvu4o3a2ct4oipbdkagm0ih; path=/; HttpOnlyX-Powered-By: ASP.NETDate: Fri, 02 Dec 2016 03:44:06 GMTConnection: closeSet-Cookie: BIGipServerpool_ebus_ebus=1465510666.64806.0000; path=/{"MSG":{"Message":{"Version":"V3.0.0","Format":"JSON","Merchant":{"ECMerchantType":"EBUS","MerchantID":"103881960110060"},"ReturnCode":"0000","ErrorMessage":"交易成功","TrxType":"PayReq","OrderNo":"abv1205","PaymentURL":"https://pay.abchina.com/ebusperbank/PaymentModeNewAct.ebf?TOKEN=14803124352854696959","OrderAmount":"0.12"},"Signature-Algorithm":"SHA1withRSA","Signature":"CnoLfhcM9x1rA8uHbugNkRiLLc2+Cxjr0QiS1+303bupltDbWG4WLBdqsZ/oOmnq29qtXpmcB8c+btf1h3W+KDsFQQPVrICORx1zKJ5N+Q+3wQSOG6zkLz9mvdvjWVoBqSm3Sduy4o4CaS0kPUW6SceTzjsBrnzFzZ8i65d8Kds="}}
+2016/12/02-11:44:11 接收报文：
+2016/12/02-11:44:11 HTTP/1.1 200 OKCache-Control: privateContent-Type: text/html; charset=gb2312Server: Microsoft-IIS/8.5X-AspNet-Version: 4.0.30319Set-Cookie: ASP.NET_SessionId=jpvu4o3a2ct4oipbdkagm0ih; path=/; HttpOnlyX-Powered-By: ASP.NETDate: Fri, 02 Dec 2016 03:44:06 GMTConnection: closeSet-Cookie: BIGipServerpool_ebus_ebus=1465510666.64806.0000; path=/{"MSG":{"Message":{"Version":"V3.0.0","Format":"JSON","Merchant":{"ECMerchantType":"EBUS","MerchantID":"103881960110060"},"ReturnCode":"0000","ErrorMessage":"交易成功","TrxType":"PayReq","OrderNo":"abv1205","PaymentURL":"https://pay.abchina.com/ebusperbank/PaymentModeNewAct.ebf?TOKEN=14803124352854696959","OrderAmount":"0.12"},"Signature-Algorithm":"SHA1withRSA","Signature":"CnoLfhcM9x1rA8uHbugNkRiLLc2+Cxjr0QiS1+303bupltDbWG4WLBdqsZ/oOmnq29qtXpmcB8c+btf1h3W+KDsFQQPVrICORx1zKJ5N+Q+3wQSOG6zkLz9mvdvjWVoBqSm3Sduy4o4CaS0kPUW6SceTzjsBrnzFzZ8i65d8Kds="}}
+2016/12/02-11:44:11 验证网上支付平台响应报文的签名：正确
+2016/12/02-11:44:11 生成交易响应对象：
+2016/12/02-11:44:11 交易结果：[0000]
+2016/12/02-11:44:11 错误信息：[交易成功]
+2016/12/02-11:44:11 交易结束==================================================
+2016/12/02-15:44:28 TrustPayClient Java V3.0.2 交易开始==========================
+2016/12/02-15:44:28 检查交易请求是否合法：
+2016/12/02-15:44:28 正确
+2016/12/02-15:44:28 交易报文：
+2016/12/02-15:44:28 完整交易报文：
+2016/12/02-15:44:28 签名后的报文：
+2016/12/02-15:44:28 发送交易报文至网上支付平台：
+2016/12/02-15:44:28 提交网上支付平台的报文：
+                    {"Message":{"Version":"V3.0.0","Format":"JSON","Merchant":{"ECMerchantType":"EBUS","MerchantID":"103881960110060"},"TrxRequest":{"TrxType":"PayReq","PaymentType":"6","PaymentLinkType":"1","ReceiveAccount":"","ReceiveAccName":"","NotifyType":"0","ResultNotifyURL":"http://yijian.zjjnyd.com/yijian/pub/abcPay/return.html","MerchantRemarks":"","IsBreakAccount":"0","SplitAccTemplate":"","Order":{"PayTypeID":"ImmediatePay","OrderDate":"2016/11/14","OrderTime":"10:45:33","orderTimeoutDate":"20171019104901","OrderNo":"abv1205","CurrencyCode":"156","OrderAmount":"0.01","Fee":"1.0","OrderDesc":"","OrderURL":"","ReceiverAddress":"","InstallmentMark":"0","CommodityType":"0101","BuyIP":"","ExpiredDate":"30","OrderItems":[{"SubMerName":"测试二级商户1","SubMerId":"12345","SubMerMCC":"0000","SubMerchantRemarks":"测试","ProductID":"IP000001","ProductName":"中国移动IP卡","UnitPrice":"1.00","Qty":"1","ProductRemarks":"测试商品","ProductType":"充值类","ProductDiscount":"0.9","ProductExpiredDate":"10"},{"SubMerName":"测试二级商户1","SubMerId":"12345","SubMerMCC":"0000","SubMerchantRemarks":"测试","ProductID":"IP000001","ProductName":"中国联通IP卡","UnitPrice":"1.00","Qty":"2","ProductRemarks":"测试商品","ProductType":"充值类","ProductDiscount":"0.9","ProductExpiredDate":"10"}]}}},"Signature-Algorithm":"SHA1withRSA","Signature":"dV9E2Wexx/bIUfYtrYQpm0nsLs4C+23vWauCS1LHtaPclKkcFTK7+tE+mwTb0eOSieXcmkvffBlz/khqFCuG+Cdo4QWBSFrgTMBr/Ke39K7m29mPXuicx3xJBe9SfAeyY2WI3W+0T9N0HQDxDwrpxaX65yXU3l2AluSnVUT2t5A="}
+2016/12/02-15:44:28 报文长度：1542
+2016/12/02-15:44:28 连线网上支付平台：成功
+2016/12/02-15:44:28 提交交易报文：成功
+2016/12/02-15:44:28 等待网上支付平台返回交易结果：成功
+2016/12/02-15:44:28 返回报文：
+                    HTTP/1.1 200 OKCache-Control: privateContent-Type: text/html; charset=gb2312Server: Microsoft-IIS/8.5X-AspNet-Version: 4.0.30319Set-Cookie: ASP.NET_SessionId=gqbnkmataefcirltb4t4sb4u; path=/; HttpOnlyX-Powered-By: ASP.NETDate: Fri, 02 Dec 2016 07:44:22 GMTConnection: closeSet-Cookie: BIGipServerpool_ebus_ebus=1465510666.65062.0000; path=/{"MSG":{"Message":{"Version":"V3.0.0","Format":"JSON","Merchant":{"ECMerchantType":"EBUS","MerchantID":"103881960110060"},"ReturnCode":"2306","ErrorMessage":"此账单编号已存在","TrxType":"PayReq","OrderNo":"abv1205","PaymentURL":"","OrderAmount":"0.01"},"Signature-Algorithm":"SHA1withRSA","Signature":"qSKSOaMlrdX2ebmRq0RfcXGHor9Rb9RAz4qnQWEG6lWKhaB24WaPK6uCY8WdnZCsyTo6Mux/jukw35I95ChKzQJcLOD2ASue6EcQm6jEXW7QWAq3CUHHOZx1yMWsDlNq2ftxM5yeBSGmGu3azxU9S4p0425WQE8gRMFfriJttqw="}}
+2016/12/02-15:44:28 接收报文：
+2016/12/02-15:44:28 HTTP/1.1 200 OKCache-Control: privateContent-Type: text/html; charset=gb2312Server: Microsoft-IIS/8.5X-AspNet-Version: 4.0.30319Set-Cookie: ASP.NET_SessionId=gqbnkmataefcirltb4t4sb4u; path=/; HttpOnlyX-Powered-By: ASP.NETDate: Fri, 02 Dec 2016 07:44:22 GMTConnection: closeSet-Cookie: BIGipServerpool_ebus_ebus=1465510666.65062.0000; path=/{"MSG":{"Message":{"Version":"V3.0.0","Format":"JSON","Merchant":{"ECMerchantType":"EBUS","MerchantID":"103881960110060"},"ReturnCode":"2306","ErrorMessage":"此账单编号已存在","TrxType":"PayReq","OrderNo":"abv1205","PaymentURL":"","OrderAmount":"0.01"},"Signature-Algorithm":"SHA1withRSA","Signature":"qSKSOaMlrdX2ebmRq0RfcXGHor9Rb9RAz4qnQWEG6lWKhaB24WaPK6uCY8WdnZCsyTo6Mux/jukw35I95ChKzQJcLOD2ASue6EcQm6jEXW7QWAq3CUHHOZx1yMWsDlNq2ftxM5yeBSGmGu3azxU9S4p0425WQE8gRMFfriJttqw="}}
+2016/12/02-15:44:28 验证网上支付平台响应报文的签名：正确
+2016/12/02-15:44:28 生成交易响应对象：
+2016/12/02-15:44:28 交易结果：[2306]
+2016/12/02-15:44:28 错误信息：[此账单编号已存在]
+2016/12/02-15:44:28 交易结束==================================================
+2016/12/02-15:46:13 TrustPayClient Java V3.0.2 交易开始==========================
+2016/12/02-15:46:13 检查交易请求是否合法：
+2016/12/02-15:46:13 正确
+2016/12/02-15:46:13 交易报文：
+2016/12/02-15:46:13 完整交易报文：
+2016/12/02-15:46:13 签名后的报文：
+2016/12/02-15:46:13 发送交易报文至网上支付平台：
+2016/12/02-15:46:13 提交网上支付平台的报文：
+                    {"Message":{"Version":"V3.0.0","Format":"JSON","Merchant":{"ECMerchantType":"EBUS","MerchantID":"103881960110060"},"TrxRequest":{"TrxType":"PayReq","PaymentType":"5","PaymentLinkType":"1","ReceiveAccount":"","ReceiveAccName":"","NotifyType":"0","ResultNotifyURL":"http://yijian.zjjnyd.com/yijian/pub/abcPay/return.html","MerchantRemarks":"","IsBreakAccount":"0","SplitAccTemplate":"","Order":{"PayTypeID":"ImmediatePay","OrderDate":"2016/11/14","OrderTime":"10:45:33","orderTimeoutDate":"20171019104901","OrderNo":"abv1205","CurrencyCode":"156","OrderAmount":"266.79","Fee":"1.0","OrderDesc":"","OrderURL":"","ReceiverAddress":"","InstallmentMark":"0","CommodityType":"0101","BuyIP":"","ExpiredDate":"30","OrderItems":[{"SubMerName":"测试二级商户1","SubMerId":"12345","SubMerMCC":"0000","SubMerchantRemarks":"测试","ProductID":"IP000001","ProductName":"中国移动IP卡","UnitPrice":"1.00","Qty":"1","ProductRemarks":"测试商品","ProductType":"充值类","ProductDiscount":"0.9","ProductExpiredDate":"10"},{"SubMerName":"测试二级商户1","SubMerId":"12345","SubMerMCC":"0000","SubMerchantRemarks":"测试","ProductID":"IP000001","ProductName":"中国联通IP卡","UnitPrice":"1.00","Qty":"2","ProductRemarks":"测试商品","ProductType":"充值类","ProductDiscount":"0.9","ProductExpiredDate":"10"}]}}},"Signature-Algorithm":"SHA1withRSA","Signature":"d3fVF91FMhjqQTkepS++JuP+PpIdtj/Z0YBNcYKzZ27mYqvDWZpnIuS0gX9gmK5mS5zjTwrUPtmyXWd7Yg6AZLO10apIlBcCtdKGdClOnfOCvE3M7Jcbv8AOCRL0BjpfujLSU8bIsP/AGIkuPd8+leMa6sffScrrqE4G4f1NT8U="}
+2016/12/02-15:46:13 报文长度：1544
+2016/12/02-15:46:13 连线网上支付平台：成功
+2016/12/02-15:46:13 提交交易报文：成功
+2016/12/02-15:46:13 等待网上支付平台返回交易结果：成功
+2016/12/02-15:46:13 返回报文：
+                    HTTP/1.1 200 OKCache-Control: privateContent-Type: text/html; charset=gb2312Server: Microsoft-IIS/8.5X-AspNet-Version: 4.0.30319Set-Cookie: ASP.NET_SessionId=uxavq3xkhibzb3exjb4l5s1j; path=/; HttpOnlyX-Powered-By: ASP.NETDate: Fri, 02 Dec 2016 07:46:07 GMTConnection: closeSet-Cookie: BIGipServerpool_ebus_ebus=1381624586.65062.0000; path=/{"MSG":{"Message":{"Version":"V3.0.0","Format":"JSON","Merchant":{"ECMerchantType":"EBUS","MerchantID":"103881960110060"},"ReturnCode":"2308","ErrorMessage":"商户无可用的支付方式","TrxType":"PayReq","OrderNo":"abv1205","PaymentURL":"","OrderAmount":"266.79"},"Signature-Algorithm":"SHA1withRSA","Signature":"vQ6kwtbrQVTkHo//ulpyyp/YBip3nhbGUD10p2h6hXjOB6Xt9KxhDMEY9ZofTV+uRtyDjLkhTF3VWf6fuxiLcO3LM9DDKSXrhHPAJn7ILkR+K2Z6EtcsK/HHyA/MS28FZxOuPq3qjWmyMGyKEtpZ95/2WLw8Z+9z8fRdhcC/yHo="}}
+2016/12/02-15:46:13 接收报文：
+2016/12/02-15:46:13 HTTP/1.1 200 OKCache-Control: privateContent-Type: text/html; charset=gb2312Server: Microsoft-IIS/8.5X-AspNet-Version: 4.0.30319Set-Cookie: ASP.NET_SessionId=uxavq3xkhibzb3exjb4l5s1j; path=/; HttpOnlyX-Powered-By: ASP.NETDate: Fri, 02 Dec 2016 07:46:07 GMTConnection: closeSet-Cookie: BIGipServerpool_ebus_ebus=1381624586.65062.0000; path=/{"MSG":{"Message":{"Version":"V3.0.0","Format":"JSON","Merchant":{"ECMerchantType":"EBUS","MerchantID":"103881960110060"},"ReturnCode":"2308","ErrorMessage":"商户无可用的支付方式","TrxType":"PayReq","OrderNo":"abv1205","PaymentURL":"","OrderAmount":"266.79"},"Signature-Algorithm":"SHA1withRSA","Signature":"vQ6kwtbrQVTkHo//ulpyyp/YBip3nhbGUD10p2h6hXjOB6Xt9KxhDMEY9ZofTV+uRtyDjLkhTF3VWf6fuxiLcO3LM9DDKSXrhHPAJn7ILkR+K2Z6EtcsK/HHyA/MS28FZxOuPq3qjWmyMGyKEtpZ95/2WLw8Z+9z8fRdhcC/yHo="}}
+2016/12/02-15:46:13 验证网上支付平台响应报文的签名：正确
+2016/12/02-15:46:13 生成交易响应对象：
+2016/12/02-15:46:13 交易结果：[2308]
+2016/12/02-15:46:13 错误信息：[商户无可用的支付方式]
+2016/12/02-15:46:13 交易结束==================================================
+2016/12/02-15:47:54 TrustPayClient Java V3.0.2 交易开始==========================
+2016/12/02-15:47:54 检查交易请求是否合法：
+2016/12/02-15:47:54 正确
+2016/12/02-15:47:54 交易报文：
+2016/12/02-15:47:54 完整交易报文：
+2016/12/02-15:47:54 签名后的报文：
+2016/12/02-15:47:54 发送交易报文至网上支付平台：
+2016/12/02-15:47:54 提交网上支付平台的报文：
+                    {"Message":{"Version":"V3.0.0","Format":"JSON","Merchant":{"ECMerchantType":"EBUS","MerchantID":"103881960110060"},"TrxRequest":{"TrxType":"PayReq","PaymentType":"5","PaymentLinkType":"1","ReceiveAccount":"","ReceiveAccName":"","NotifyType":"0","ResultNotifyURL":"http://yijian.zjjnyd.com/yijian/pub/abcPay/return.html","MerchantRemarks":"","IsBreakAccount":"0","SplitAccTemplate":"","Order":{"PayTypeID":"ImmediatePay","OrderDate":"2016/11/14","OrderTime":"10:45:33","orderTimeoutDate":"20171019104901","OrderNo":"abv1205","CurrencyCode":"156","OrderAmount":"168.0","Fee":"1.0","OrderDesc":"","OrderURL":"","ReceiverAddress":"","InstallmentMark":"0","CommodityType":"0101","BuyIP":"","ExpiredDate":"30","OrderItems":[{"SubMerName":"测试二级商户1","SubMerId":"12345","SubMerMCC":"0000","SubMerchantRemarks":"测试","ProductID":"IP000001","ProductName":"中国移动IP卡","UnitPrice":"1.00","Qty":"1","ProductRemarks":"测试商品","ProductType":"充值类","ProductDiscount":"0.9","ProductExpiredDate":"10"},{"SubMerName":"测试二级商户1","SubMerId":"12345","SubMerMCC":"0000","SubMerchantRemarks":"测试","ProductID":"IP000001","ProductName":"中国联通IP卡","UnitPrice":"1.00","Qty":"2","ProductRemarks":"测试商品","ProductType":"充值类","ProductDiscount":"0.9","ProductExpiredDate":"10"}]}}},"Signature-Algorithm":"SHA1withRSA","Signature":"ncVAgX8pqUIcYEucLzIFXuFEK0EW4YJb2H5NThg2v0ucbpfAM/0Mp1TP7j1TUIvElr7HIGG1gV1i+xVDAHpMK93fWek6asSPJb98wuuh25/CkYz8/h+1sZJfztiMWZk+Syidlv+pSjbADrqs/IEoKbrL4ZVfanNxdDitY9ndtE0="}
+2016/12/02-15:47:54 报文长度：1543
+2016/12/02-15:47:54 连线网上支付平台：成功
+2016/12/02-15:47:54 提交交易报文：成功
+2016/12/02-15:47:54 等待网上支付平台返回交易结果：成功
+2016/12/02-15:47:54 返回报文：
+                    HTTP/1.1 200 OKCache-Control: privateContent-Type: text/html; charset=gb2312Server: Microsoft-IIS/8.5X-AspNet-Version: 4.0.30319Set-Cookie: ASP.NET_SessionId=5qdzcobvpmbkpwiq2seadury; path=/; HttpOnlyX-Powered-By: ASP.NETDate: Fri, 02 Dec 2016 07:47:49 GMTConnection: closeSet-Cookie: BIGipServerpool_ebus_ebus=1398401802.64550.0000; path=/{"MSG":{"Message":{"Version":"V3.0.0","Format":"JSON","Merchant":{"ECMerchantType":"EBUS","MerchantID":"103881960110060"},"ReturnCode":"2308","ErrorMessage":"商户无可用的支付方式","TrxType":"PayReq","OrderNo":"abv1205","PaymentURL":"","OrderAmount":"168.0"},"Signature-Algorithm":"SHA1withRSA","Signature":"7teuOtKpm45ks/P42UUb89DRzVBCaNP/LqNJYvLe/FkDt8khJciX1mnLxoOC/6/UjrHAjjiYDttbRQLZhWIZS/AuomMZMkyOrV31uerQNK+xFhY/NYfpBq1UGAYij39T8J8npQeqzREt4WMxnxN4w0HGlrJptqu6OwbgsDu6DQ8="}}
+2016/12/02-15:47:54 接收报文：
+2016/12/02-15:47:54 HTTP/1.1 200 OKCache-Control: privateContent-Type: text/html; charset=gb2312Server: Microsoft-IIS/8.5X-AspNet-Version: 4.0.30319Set-Cookie: ASP.NET_SessionId=5qdzcobvpmbkpwiq2seadury; path=/; HttpOnlyX-Powered-By: ASP.NETDate: Fri, 02 Dec 2016 07:47:49 GMTConnection: closeSet-Cookie: BIGipServerpool_ebus_ebus=1398401802.64550.0000; path=/{"MSG":{"Message":{"Version":"V3.0.0","Format":"JSON","Merchant":{"ECMerchantType":"EBUS","MerchantID":"103881960110060"},"ReturnCode":"2308","ErrorMessage":"商户无可用的支付方式","TrxType":"PayReq","OrderNo":"abv1205","PaymentURL":"","OrderAmount":"168.0"},"Signature-Algorithm":"SHA1withRSA","Signature":"7teuOtKpm45ks/P42UUb89DRzVBCaNP/LqNJYvLe/FkDt8khJciX1mnLxoOC/6/UjrHAjjiYDttbRQLZhWIZS/AuomMZMkyOrV31uerQNK+xFhY/NYfpBq1UGAYij39T8J8npQeqzREt4WMxnxN4w0HGlrJptqu6OwbgsDu6DQ8="}}
+2016/12/02-15:47:54 验证网上支付平台响应报文的签名：正确
+2016/12/02-15:47:54 生成交易响应对象：
+2016/12/02-15:47:54 交易结果：[2308]
+2016/12/02-15:47:54 错误信息：[商户无可用的支付方式]
+2016/12/02-15:47:54 交易结束==================================================
+2016/12/02-15:48:48 TrustPayClient Java V3.0.2 交易开始==========================
+2016/12/02-15:48:48 检查交易请求是否合法：
+2016/12/02-15:48:48 正确
+2016/12/02-15:48:48 交易报文：
+2016/12/02-15:48:48 完整交易报文：
+2016/12/02-15:48:48 签名后的报文：
+2016/12/02-15:48:48 发送交易报文至网上支付平台：
+2016/12/02-15:48:48 提交网上支付平台的报文：
+                    {"Message":{"Version":"V3.0.0","Format":"JSON","Merchant":{"ECMerchantType":"EBUS","MerchantID":"103881960110060"},"TrxRequest":{"TrxType":"PayReq","PaymentType":"1","PaymentLinkType":"1","ReceiveAccount":"","ReceiveAccName":"","NotifyType":"0","ResultNotifyURL":"http://yijian.zjjnyd.com/yijian/pub/abcPay/return.html","MerchantRemarks":"","IsBreakAccount":"0","SplitAccTemplate":"","Order":{"PayTypeID":"ImmediatePay","OrderDate":"2016/11/14","OrderTime":"10:45:33","orderTimeoutDate":"20171019104901","OrderNo":"abv1205","CurrencyCode":"156","OrderAmount":"168.0","Fee":"1.0","OrderDesc":"","OrderURL":"","ReceiverAddress":"","InstallmentMark":"0","CommodityType":"0101","BuyIP":"","ExpiredDate":"30","OrderItems":[{"SubMerName":"测试二级商户1","SubMerId":"12345","SubMerMCC":"0000","SubMerchantRemarks":"测试","ProductID":"IP000001","ProductName":"中国移动IP卡","UnitPrice":"1.00","Qty":"1","ProductRemarks":"测试商品","ProductType":"充值类","ProductDiscount":"0.9","ProductExpiredDate":"10"},{"SubMerName":"测试二级商户1","SubMerId":"12345","SubMerMCC":"0000","SubMerchantRemarks":"测试","ProductID":"IP000001","ProductName":"中国联通IP卡","UnitPrice":"1.00","Qty":"2","ProductRemarks":"测试商品","ProductType":"充值类","ProductDiscount":"0.9","ProductExpiredDate":"10"}]}}},"Signature-Algorithm":"SHA1withRSA","Signature":"VS88ENySVvFB4FfSN3JpPzgaKHJrevLa/mq3cIOrYRo3JeTw8TC2W6gHv9Zt/RZGd0vZumGG/ojvJQ5L3rvIil2zhQrn5ToNHiQG4y3E5eB50xJcqAPTESFHiV7/lQAECcD3f33kNJPEN1rCUZI7zwvIaS2zBL2N8EU8sANa+74="}
+2016/12/02-15:48:48 报文长度：1543
+2016/12/02-15:48:48 连线网上支付平台：成功
+2016/12/02-15:48:48 提交交易报文：成功
+2016/12/02-15:48:48 等待网上支付平台返回交易结果：成功
+2016/12/02-15:48:48 返回报文：
+                    HTTP/1.1 200 OKCache-Control: privateContent-Type: text/html; charset=gb2312Server: Microsoft-IIS/8.5X-AspNet-Version: 4.0.30319Set-Cookie: ASP.NET_SessionId=rd0l1t45fpxmvt0ozyqf3c4f; path=/; HttpOnlyX-Powered-By: ASP.NETDate: Fri, 02 Dec 2016 07:48:43 GMTConnection: closeSet-Cookie: BIGipServerpool_ebus_ebus=1348070154.64550.0000; path=/{"MSG":{"Message":{"Version":"V3.0.0","Format":"JSON","Merchant":{"ECMerchantType":"EBUS","MerchantID":"103881960110060"},"ReturnCode":"2306","ErrorMessage":"此账单编号已存在","TrxType":"PayReq","OrderNo":"abv1205","PaymentURL":"","OrderAmount":"168.0"},"Signature-Algorithm":"SHA1withRSA","Signature":"9tsIgAQv4r3zGxkgN+R7KqI0LEGQga5ysoF8ZT8vJmHw17wp8qRa5hmAj4z2usWyHeveZ70Yw1ScxQaGKK41r3zuJQSXlIyLoWQx2wiX3z3NSO0m9+vTAj55OAqH5lUT+JkM1C9ZNYHiqZbW2LzxPyllSaShTPedXXFrYmt8iYM="}}
+2016/12/02-15:48:48 接收报文：
+2016/12/02-15:48:48 HTTP/1.1 200 OKCache-Control: privateContent-Type: text/html; charset=gb2312Server: Microsoft-IIS/8.5X-AspNet-Version: 4.0.30319Set-Cookie: ASP.NET_SessionId=rd0l1t45fpxmvt0ozyqf3c4f; path=/; HttpOnlyX-Powered-By: ASP.NETDate: Fri, 02 Dec 2016 07:48:43 GMTConnection: closeSet-Cookie: BIGipServerpool_ebus_ebus=1348070154.64550.0000; path=/{"MSG":{"Message":{"Version":"V3.0.0","Format":"JSON","Merchant":{"ECMerchantType":"EBUS","MerchantID":"103881960110060"},"ReturnCode":"2306","ErrorMessage":"此账单编号已存在","TrxType":"PayReq","OrderNo":"abv1205","PaymentURL":"","OrderAmount":"168.0"},"Signature-Algorithm":"SHA1withRSA","Signature":"9tsIgAQv4r3zGxkgN+R7KqI0LEGQga5ysoF8ZT8vJmHw17wp8qRa5hmAj4z2usWyHeveZ70Yw1ScxQaGKK41r3zuJQSXlIyLoWQx2wiX3z3NSO0m9+vTAj55OAqH5lUT+JkM1C9ZNYHiqZbW2LzxPyllSaShTPedXXFrYmt8iYM="}}
+2016/12/02-15:48:48 验证网上支付平台响应报文的签名：正确
+2016/12/02-15:48:48 生成交易响应对象：
+2016/12/02-15:48:48 交易结果：[2306]
+2016/12/02-15:48:48 错误信息：[此账单编号已存在]
+2016/12/02-15:48:48 交易结束==================================================
+2016/12/02-15:50:13 TrustPayClient Java V3.0.2 交易开始==========================
+2016/12/02-15:50:13 检查交易请求是否合法：
+2016/12/02-15:50:13 正确
+2016/12/02-15:50:13 交易报文：
+2016/12/02-15:50:13 完整交易报文：
+2016/12/02-15:50:13 签名后的报文：
+2016/12/02-15:50:13 发送交易报文至网上支付平台：
+2016/12/02-15:50:13 提交网上支付平台的报文：
+                    {"Message":{"Version":"V3.0.0","Format":"JSON","Merchant":{"ECMerchantType":"EBUS","MerchantID":"103881960110060"},"TrxRequest":{"TrxType":"PayReq","PaymentType":"1","PaymentLinkType":"1","ReceiveAccount":"","ReceiveAccName":"","NotifyType":"0","ResultNotifyURL":"http://yijian.zjjnyd.com/yijian/pub/abcPay/return.html","MerchantRemarks":"","IsBreakAccount":"0","SplitAccTemplate":"","Order":{"PayTypeID":"ImmediatePay","OrderDate":"2016/11/14","OrderTime":"10:45:33","orderTimeoutDate":"20171019104901","OrderNo":"abv1205","CurrencyCode":"156","OrderAmount":"48.0","Fee":"1.0","OrderDesc":"","OrderURL":"","ReceiverAddress":"","InstallmentMark":"0","CommodityType":"0101","BuyIP":"","ExpiredDate":"30","OrderItems":[{"SubMerName":"测试二级商户1","SubMerId":"12345","SubMerMCC":"0000","SubMerchantRemarks":"测试","ProductID":"IP000001","ProductName":"中国移动IP卡","UnitPrice":"1.00","Qty":"1","ProductRemarks":"测试商品","ProductType":"充值类","ProductDiscount":"0.9","ProductExpiredDate":"10"},{"SubMerName":"测试二级商户1","SubMerId":"12345","SubMerMCC":"0000","SubMerchantRemarks":"测试","ProductID":"IP000001","ProductName":"中国联通IP卡","UnitPrice":"1.00","Qty":"2","ProductRemarks":"测试商品","ProductType":"充值类","ProductDiscount":"0.9","ProductExpiredDate":"10"}]}}},"Signature-Algorithm":"SHA1withRSA","Signature":"m3vA9fDcT7cCrtBG2enOvJ/WI2zAvBL7v3+pI+rSNzBQS409DGlOqU+oKhoVQWvoL+jeIT4ALt95hUSN2b0rRoNUG0O6i4b/RD+jfxSZEli0kdZmopTeyGftSwfHokgWWhE6xsG5WFixVHDm00N4m9dOcXNXhM+IVXWMm1vsBEY="}
+2016/12/02-15:50:13 报文长度：1542
+2016/12/02-15:50:13 连线网上支付平台：成功
+2016/12/02-15:50:13 提交交易报文：成功
+2016/12/02-15:50:13 等待网上支付平台返回交易结果：成功
+2016/12/02-15:50:13 返回报文：
+                    HTTP/1.1 200 OKCache-Control: privateContent-Type: text/html; charset=gb2312Server: Microsoft-IIS/8.5X-AspNet-Version: 4.0.30319Set-Cookie: ASP.NET_SessionId=5act1ftr0f44to41f0w2rnh1; path=/; HttpOnlyX-Powered-By: ASP.NETDate: Fri, 02 Dec 2016 07:50:07 GMTConnection: closeSet-Cookie: BIGipServerpool_ebus_ebus=291891978.64806.0000; path=/{"MSG":{"Message":{"Version":"V3.0.0","Format":"JSON","Merchant":{"ECMerchantType":"EBUS","MerchantID":"103881960110060"},"ReturnCode":"2306","ErrorMessage":"此账单编号已存在","TrxType":"PayReq","OrderNo":"abv1205","PaymentURL":"","OrderAmount":"48.0"},"Signature-Algorithm":"SHA1withRSA","Signature":"a8PHVy5Hk2jWHiIjf/z6YbGJYgPydJYgwTW3hT//wxxU/e9bVEz7pW3a1UE2t9Kybha069MIvrBeCIxp1ob8iD6S4A4ha+qWzY8AVCeT9TOk8oAPMKTJd/ibHwt+k/F8cxhYHF1PEW/wveKWtmqPK0v2W+FUuiMsCH2Gwb/5Nk4="}}
+2016/12/02-15:50:13 接收报文：
+2016/12/02-15:50:13 HTTP/1.1 200 OKCache-Control: privateContent-Type: text/html; charset=gb2312Server: Microsoft-IIS/8.5X-AspNet-Version: 4.0.30319Set-Cookie: ASP.NET_SessionId=5act1ftr0f44to41f0w2rnh1; path=/; HttpOnlyX-Powered-By: ASP.NETDate: Fri, 02 Dec 2016 07:50:07 GMTConnection: closeSet-Cookie: BIGipServerpool_ebus_ebus=291891978.64806.0000; path=/{"MSG":{"Message":{"Version":"V3.0.0","Format":"JSON","Merchant":{"ECMerchantType":"EBUS","MerchantID":"103881960110060"},"ReturnCode":"2306","ErrorMessage":"此账单编号已存在","TrxType":"PayReq","OrderNo":"abv1205","PaymentURL":"","OrderAmount":"48.0"},"Signature-Algorithm":"SHA1withRSA","Signature":"a8PHVy5Hk2jWHiIjf/z6YbGJYgPydJYgwTW3hT//wxxU/e9bVEz7pW3a1UE2t9Kybha069MIvrBeCIxp1ob8iD6S4A4ha+qWzY8AVCeT9TOk8oAPMKTJd/ibHwt+k/F8cxhYHF1PEW/wveKWtmqPK0v2W+FUuiMsCH2Gwb/5Nk4="}}
+2016/12/02-15:50:13 验证网上支付平台响应报文的签名：正确
+2016/12/02-15:50:13 生成交易响应对象：
+2016/12/02-15:50:13 交易结果：[2306]
+2016/12/02-15:50:13 错误信息：[此账单编号已存在]
+2016/12/02-15:50:13 交易结束==================================================
+2016/12/02-15:53:12 TrustPayClient Java V3.0.2 交易开始==========================
+2016/12/02-15:53:12 检查交易请求是否合法：
+2016/12/02-15:53:12 正确
+2016/12/02-15:53:12 交易报文：
+2016/12/02-15:53:12 完整交易报文：
+2016/12/02-15:53:12 签名后的报文：
+2016/12/02-15:53:12 发送交易报文至网上支付平台：
+2016/12/02-15:53:12 提交网上支付平台的报文：
+                    {"Message":{"Version":"V3.0.0","Format":"JSON","Merchant":{"ECMerchantType":"EBUS","MerchantID":"103881960110060"},"TrxRequest":{"TrxType":"PayReq","PaymentType":"1","PaymentLinkType":"1","ReceiveAccount":"","ReceiveAccName":"","NotifyType":"0","ResultNotifyURL":"http://yijian.zjjnyd.com/yijian/pub/abcPay/return.html","MerchantRemarks":"","IsBreakAccount":"0","SplitAccTemplate":"","Order":{"PayTypeID":"ImmediatePay","OrderDate":"2016/11/14","OrderTime":"10:45:33","orderTimeoutDate":"20171019104901","OrderNo":"abv1205","CurrencyCode":"156","OrderAmount":"0.02","Fee":"1.0","OrderDesc":"","OrderURL":"","ReceiverAddress":"","InstallmentMark":"0","CommodityType":"0101","BuyIP":"","ExpiredDate":"30","OrderItems":[{"SubMerName":"测试二级商户1","SubMerId":"12345","SubMerMCC":"0000","SubMerchantRemarks":"测试","ProductID":"IP000001","ProductName":"中国移动IP卡","UnitPrice":"1.00","Qty":"1","ProductRemarks":"测试商品","ProductType":"充值类","ProductDiscount":"0.9","ProductExpiredDate":"10"},{"SubMerName":"测试二级商户1","SubMerId":"12345","SubMerMCC":"0000","SubMerchantRemarks":"测试","ProductID":"IP000001","ProductName":"中国联通IP卡","UnitPrice":"1.00","Qty":"2","ProductRemarks":"测试商品","ProductType":"充值类","ProductDiscount":"0.9","ProductExpiredDate":"10"}]}}},"Signature-Algorithm":"SHA1withRSA","Signature":"ENGw8nf1LXq3UC/cAT/JhmY547/fHgfx/vOkEbozd81/uMtAu9LpIapOb/Kl3E5OZ735j0wjHbf8RRfDj4CPBYF9tikf2UNA8u1hW7ibHHjdq5x3hDLzBiq61pou5cPyPFMU7a7fv/vFErpTWiAB7iJu7F5QdsIDxuoErO0XnQY="}
+2016/12/02-15:53:12 报文长度：1542
+2016/12/02-15:53:12 连线网上支付平台：成功
+2016/12/02-15:53:12 提交交易报文：成功
+2016/12/02-15:53:12 等待网上支付平台返回交易结果：成功
+2016/12/02-15:53:12 返回报文：
+                    HTTP/1.1 200 OKCache-Control: privateContent-Type: text/html; charset=gb2312Server: Microsoft-IIS/8.5X-AspNet-Version: 4.0.30319Set-Cookie: ASP.NET_SessionId=wvaln4wrgkt2hyv5fvn0vlf4; path=/; HttpOnlyX-Powered-By: ASP.NETDate: Fri, 02 Dec 2016 07:53:07 GMTConnection: closeSet-Cookie: BIGipServerpool_ebus_ebus=1431956234.64550.0000; path=/{"MSG":{"Message":{"Version":"V3.0.0","Format":"JSON","Merchant":{"ECMerchantType":"EBUS","MerchantID":"103881960110060"},"ReturnCode":"2306","ErrorMessage":"此账单编号已存在","TrxType":"PayReq","OrderNo":"abv1205","PaymentURL":"","OrderAmount":"0.02"},"Signature-Algorithm":"SHA1withRSA","Signature":"sQEI/5CwWDmhmfFJNftYLSpudj319I9x8iNkY040KCrl5ojjCkoYs5+IM1/LG8Ley0DYHDY1sdI4psYcEjS5rNnbrg/btgL+Cv1yrPxs33h/n9ByZpjaQq5zzOYRcgumPzLZDhPkdksNquFsAXClaHy0YZNBgxFBkYVlZBifu4E="}}
+2016/12/02-15:53:12 接收报文：
+2016/12/02-15:53:12 HTTP/1.1 200 OKCache-Control: privateContent-Type: text/html; charset=gb2312Server: Microsoft-IIS/8.5X-AspNet-Version: 4.0.30319Set-Cookie: ASP.NET_SessionId=wvaln4wrgkt2hyv5fvn0vlf4; path=/; HttpOnlyX-Powered-By: ASP.NETDate: Fri, 02 Dec 2016 07:53:07 GMTConnection: closeSet-Cookie: BIGipServerpool_ebus_ebus=1431956234.64550.0000; path=/{"MSG":{"Message":{"Version":"V3.0.0","Format":"JSON","Merchant":{"ECMerchantType":"EBUS","MerchantID":"103881960110060"},"ReturnCode":"2306","ErrorMessage":"此账单编号已存在","TrxType":"PayReq","OrderNo":"abv1205","PaymentURL":"","OrderAmount":"0.02"},"Signature-Algorithm":"SHA1withRSA","Signature":"sQEI/5CwWDmhmfFJNftYLSpudj319I9x8iNkY040KCrl5ojjCkoYs5+IM1/LG8Ley0DYHDY1sdI4psYcEjS5rNnbrg/btgL+Cv1yrPxs33h/n9ByZpjaQq5zzOYRcgumPzLZDhPkdksNquFsAXClaHy0YZNBgxFBkYVlZBifu4E="}}
+2016/12/02-15:53:12 验证网上支付平台响应报文的签名：正确
+2016/12/02-15:53:12 生成交易响应对象：
+2016/12/02-15:53:12 交易结果：[2306]
+2016/12/02-15:53:12 错误信息：[此账单编号已存在]
+2016/12/02-15:53:12 交易结束==================================================
+2016/12/02-15:54:56 TrustPayClient Java V3.0.2 交易开始==========================
+2016/12/02-15:54:56 检查交易请求是否合法：
+2016/12/02-15:54:56 正确
+2016/12/02-15:54:56 交易报文：
+2016/12/02-15:54:56 完整交易报文：
+2016/12/02-15:54:56 签名后的报文：
+2016/12/02-15:54:56 发送交易报文至网上支付平台：
+2016/12/02-15:54:56 提交网上支付平台的报文：
+                    {"Message":{"Version":"V3.0.0","Format":"JSON","Merchant":{"ECMerchantType":"EBUS","MerchantID":"103881960110060"},"TrxRequest":{"TrxType":"PayReq","PaymentType":"1","PaymentLinkType":"1","ReceiveAccount":"","ReceiveAccName":"","NotifyType":"0","ResultNotifyURL":"http://yijian.zjjnyd.com/yijian/pub/abcPay/return.html","MerchantRemarks":"","IsBreakAccount":"0","SplitAccTemplate":"","Order":{"PayTypeID":"ImmediatePay","OrderDate":"2016/11/14","OrderTime":"10:45:33","orderTimeoutDate":"20171019104901","OrderNo":"abv1205","CurrencyCode":"156","OrderAmount":"0.02","Fee":"1.0","OrderDesc":"","OrderURL":"","ReceiverAddress":"","InstallmentMark":"0","CommodityType":"0101","BuyIP":"","ExpiredDate":"30","OrderItems":[{"SubMerName":"测试二级商户1","SubMerId":"12345","SubMerMCC":"0000","SubMerchantRemarks":"测试","ProductID":"IP000001","ProductName":"中国移动IP卡","UnitPrice":"1.00","Qty":"1","ProductRemarks":"测试商品","ProductType":"充值类","ProductDiscount":"0.9","ProductExpiredDate":"10"},{"SubMerName":"测试二级商户1","SubMerId":"12345","SubMerMCC":"0000","SubMerchantRemarks":"测试","ProductID":"IP000001","ProductName":"中国联通IP卡","UnitPrice":"1.00","Qty":"2","ProductRemarks":"测试商品","ProductType":"充值类","ProductDiscount":"0.9","ProductExpiredDate":"10"}]}}},"Signature-Algorithm":"SHA1withRSA","Signature":"ENGw8nf1LXq3UC/cAT/JhmY547/fHgfx/vOkEbozd81/uMtAu9LpIapOb/Kl3E5OZ735j0wjHbf8RRfDj4CPBYF9tikf2UNA8u1hW7ibHHjdq5x3hDLzBiq61pou5cPyPFMU7a7fv/vFErpTWiAB7iJu7F5QdsIDxuoErO0XnQY="}
+2016/12/02-15:54:56 报文长度：1542
+2016/12/02-15:54:56 连线网上支付平台：成功
+2016/12/02-15:54:56 提交交易报文：成功
+2016/12/02-15:54:56 等待网上支付平台返回交易结果：成功
+2016/12/02-15:54:56 返回报文：
+                    HTTP/1.1 200 OKCache-Control: privateContent-Type: text/html; charset=gb2312Server: Microsoft-IIS/8.5X-AspNet-Version: 4.0.30319Set-Cookie: ASP.NET_SessionId=sejusrqmro3oyeezrcd2ihck; path=/; HttpOnlyX-Powered-By: ASP.NETDate: Fri, 02 Dec 2016 07:54:51 GMTConnection: closeSet-Cookie: BIGipServerpool_ebus_ebus=1499065098.64550.0000; path=/{"MSG":{"Message":{"Version":"V3.0.0","Format":"JSON","Merchant":{"ECMerchantType":"EBUS","MerchantID":"103881960110060"},"ReturnCode":"2306","ErrorMessage":"此账单编号已存在","TrxType":"PayReq","OrderNo":"abv1205","PaymentURL":"","OrderAmount":"0.02"},"Signature-Algorithm":"SHA1withRSA","Signature":"sQEI/5CwWDmhmfFJNftYLSpudj319I9x8iNkY040KCrl5ojjCkoYs5+IM1/LG8Ley0DYHDY1sdI4psYcEjS5rNnbrg/btgL+Cv1yrPxs33h/n9ByZpjaQq5zzOYRcgumPzLZDhPkdksNquFsAXClaHy0YZNBgxFBkYVlZBifu4E="}}
+2016/12/02-15:54:56 接收报文：
+2016/12/02-15:54:56 HTTP/1.1 200 OKCache-Control: privateContent-Type: text/html; charset=gb2312Server: Microsoft-IIS/8.5X-AspNet-Version: 4.0.30319Set-Cookie: ASP.NET_SessionId=sejusrqmro3oyeezrcd2ihck; path=/; HttpOnlyX-Powered-By: ASP.NETDate: Fri, 02 Dec 2016 07:54:51 GMTConnection: closeSet-Cookie: BIGipServerpool_ebus_ebus=1499065098.64550.0000; path=/{"MSG":{"Message":{"Version":"V3.0.0","Format":"JSON","Merchant":{"ECMerchantType":"EBUS","MerchantID":"103881960110060"},"ReturnCode":"2306","ErrorMessage":"此账单编号已存在","TrxType":"PayReq","OrderNo":"abv1205","PaymentURL":"","OrderAmount":"0.02"},"Signature-Algorithm":"SHA1withRSA","Signature":"sQEI/5CwWDmhmfFJNftYLSpudj319I9x8iNkY040KCrl5ojjCkoYs5+IM1/LG8Ley0DYHDY1sdI4psYcEjS5rNnbrg/btgL+Cv1yrPxs33h/n9ByZpjaQq5zzOYRcgumPzLZDhPkdksNquFsAXClaHy0YZNBgxFBkYVlZBifu4E="}}
+2016/12/02-15:54:56 验证网上支付平台响应报文的签名：正确
+2016/12/02-15:54:56 生成交易响应对象：
+2016/12/02-15:54:56 交易结果：[2306]
+2016/12/02-15:54:56 错误信息：[此账单编号已存在]
+2016/12/02-15:54:56 交易结束==================================================
+2016/12/02-15:58:01 TrustPayClient Java V3.0.2 交易开始==========================
+2016/12/02-15:58:01 检查交易请求是否合法：
+2016/12/02-15:58:01 正确
+2016/12/02-15:58:01 交易报文：
+2016/12/02-15:58:01 完整交易报文：
+2016/12/02-15:58:01 签名后的报文：
+2016/12/02-15:58:01 发送交易报文至网上支付平台：
+2016/12/02-15:58:01 提交网上支付平台的报文：
+                    {"Message":{"Version":"V3.0.0","Format":"JSON","Merchant":{"ECMerchantType":"EBUS","MerchantID":"103881960110060"},"TrxRequest":{"TrxType":"PayReq","PaymentType":"1","PaymentLinkType":"1","ReceiveAccount":"","ReceiveAccName":"","NotifyType":"0","ResultNotifyURL":"http://yijian.zjjnyd.com/yijian/pub/abcPay/return.html","MerchantRemarks":"","IsBreakAccount":"0","SplitAccTemplate":"","Order":{"PayTypeID":"ImmediatePay","OrderDate":"2016/11/14","OrderTime":"10:45:33","orderTimeoutDate":"20171019104901","OrderNo":"abv1205","CurrencyCode":"156","OrderAmount":"0.11","Fee":"1.0","OrderDesc":"","OrderURL":"","ReceiverAddress":"","InstallmentMark":"0","CommodityType":"0101","BuyIP":"","ExpiredDate":"30","OrderItems":[{"SubMerName":"测试二级商户1","SubMerId":"12345","SubMerMCC":"0000","SubMerchantRemarks":"测试","ProductID":"IP000001","ProductName":"中国移动IP卡","UnitPrice":"1.00","Qty":"1","ProductRemarks":"测试商品","ProductType":"充值类","ProductDiscount":"0.9","ProductExpiredDate":"10"},{"SubMerName":"测试二级商户1","SubMerId":"12345","SubMerMCC":"0000","SubMerchantRemarks":"测试","ProductID":"IP000001","ProductName":"中国联通IP卡","UnitPrice":"1.00","Qty":"2","ProductRemarks":"测试商品","ProductType":"充值类","ProductDiscount":"0.9","ProductExpiredDate":"10"}]}}},"Signature-Algorithm":"SHA1withRSA","Signature":"mK+ba/pWRzsJE5hR0En1Lg+Bk6SUlHAzbs2w4IljIpEP4YplafC9xLE3Z4P7x9aO2F2B14/N8YeRLAtRRALZw6Qk+CMMOYCJeQjlEFY5HEh3Bsa0xgF6ctkeo7uET8+tRAg9F1zWvjZtg5QfrlLnEH4iSwzK93o2AUy2zNiRQ2k="}
+2016/12/02-15:58:01 报文长度：1542
+2016/12/02-15:58:01 连线网上支付平台：成功
+2016/12/02-15:58:01 提交交易报文：成功
+2016/12/02-15:58:01 等待网上支付平台返回交易结果：成功
+2016/12/02-15:58:01 返回报文：
+                    HTTP/1.1 200 OKCache-Control: privateContent-Type: text/html; charset=gb2312Server: Microsoft-IIS/8.5X-AspNet-Version: 4.0.30319Set-Cookie: ASP.NET_SessionId=xdrib52stdnas0kr3pomrk43; path=/; HttpOnlyX-Powered-By: ASP.NETDate: Fri, 02 Dec 2016 07:57:57 GMTConnection: closeSet-Cookie: BIGipServerpool_ebus_ebus=275114762.64806.0000; path=/{"MSG":{"Message":{"Version":"V3.0.0","Format":"JSON","Merchant":{"ECMerchantType":"EBUS","MerchantID":"103881960110060"},"ReturnCode":"2306","ErrorMessage":"此账单编号已存在","TrxType":"PayReq","OrderNo":"abv1205","PaymentURL":"","OrderAmount":"0.11"},"Signature-Algorithm":"SHA1withRSA","Signature":"pcuM5t07YjMxhUkKiOxQfmtekPy5YelVUIkDz5rv9rASx7oiQ3HzZJtc0DUumzd3p8xmKV7xKV/blNCPcY2N1quOztjWJNw7Qt0TcQR5TRUSAwEilMJ9xU5yaLVlB4rappfBehZPcTGcrTHbnDKiMnaEOyKOINgx+4IRdwlRKu4="}}
+2016/12/02-15:58:01 接收报文：
+2016/12/02-15:58:01 HTTP/1.1 200 OKCache-Control: privateContent-Type: text/html; charset=gb2312Server: Microsoft-IIS/8.5X-AspNet-Version: 4.0.30319Set-Cookie: ASP.NET_SessionId=xdrib52stdnas0kr3pomrk43; path=/; HttpOnlyX-Powered-By: ASP.NETDate: Fri, 02 Dec 2016 07:57:57 GMTConnection: closeSet-Cookie: BIGipServerpool_ebus_ebus=275114762.64806.0000; path=/{"MSG":{"Message":{"Version":"V3.0.0","Format":"JSON","Merchant":{"ECMerchantType":"EBUS","MerchantID":"103881960110060"},"ReturnCode":"2306","ErrorMessage":"此账单编号已存在","TrxType":"PayReq","OrderNo":"abv1205","PaymentURL":"","OrderAmount":"0.11"},"Signature-Algorithm":"SHA1withRSA","Signature":"pcuM5t07YjMxhUkKiOxQfmtekPy5YelVUIkDz5rv9rASx7oiQ3HzZJtc0DUumzd3p8xmKV7xKV/blNCPcY2N1quOztjWJNw7Qt0TcQR5TRUSAwEilMJ9xU5yaLVlB4rappfBehZPcTGcrTHbnDKiMnaEOyKOINgx+4IRdwlRKu4="}}
+2016/12/02-15:58:01 验证网上支付平台响应报文的签名：正确
+2016/12/02-15:58:01 生成交易响应对象：
+2016/12/02-15:58:01 交易结果：[2306]
+2016/12/02-15:58:01 错误信息：[此账单编号已存在]
+2016/12/02-15:58:01 交易结束==================================================
+2016/12/02-16:02:25 TrustPayClient Java V3.0.2 交易开始==========================
+2016/12/02-16:02:25 检查交易请求是否合法：
+2016/12/02-16:02:25 正确
+2016/12/02-16:02:26 交易报文：
+2016/12/02-16:02:26 完整交易报文：
+2016/12/02-16:02:26 签名后的报文：
+2016/12/02-16:02:26 发送交易报文至网上支付平台：
+2016/12/02-16:02:26 提交网上支付平台的报文：
+                    {"Message":{"Version":"V3.0.0","Format":"JSON","Merchant":{"ECMerchantType":"EBUS","MerchantID":"103881960110060"},"TrxRequest":{"TrxType":"PayReq","PaymentType":"1","PaymentLinkType":"1","ReceiveAccount":"","ReceiveAccName":"","NotifyType":"0","ResultNotifyURL":"http://yijian.zjjnyd.com/yijian/pub/abcPay/return.html","MerchantRemarks":"","IsBreakAccount":"0","SplitAccTemplate":"","Order":{"PayTypeID":"ImmediatePay","OrderDate":"2016/11/14","OrderTime":"10:45:33","orderTimeoutDate":"20171019104901","OrderNo":"abv1205","CurrencyCode":"156","OrderAmount":"0.11","Fee":"1.0","OrderDesc":"","OrderURL":"","ReceiverAddress":"","InstallmentMark":"0","CommodityType":"0101","BuyIP":"","ExpiredDate":"30","OrderItems":[{"SubMerName":"测试二级商户1","SubMerId":"12345","SubMerMCC":"0000","SubMerchantRemarks":"测试","ProductID":"IP000001","ProductName":"中国移动IP卡","UnitPrice":"1.00","Qty":"1","ProductRemarks":"测试商品","ProductType":"充值类","ProductDiscount":"0.9","ProductExpiredDate":"10"},{"SubMerName":"测试二级商户1","SubMerId":"12345","SubMerMCC":"0000","SubMerchantRemarks":"测试","ProductID":"IP000001","ProductName":"中国联通IP卡","UnitPrice":"1.00","Qty":"2","ProductRemarks":"测试商品","ProductType":"充值类","ProductDiscount":"0.9","ProductExpiredDate":"10"}]}}},"Signature-Algorithm":"SHA1withRSA","Signature":"mK+ba/pWRzsJE5hR0En1Lg+Bk6SUlHAzbs2w4IljIpEP4YplafC9xLE3Z4P7x9aO2F2B14/N8YeRLAtRRALZw6Qk+CMMOYCJeQjlEFY5HEh3Bsa0xgF6ctkeo7uET8+tRAg9F1zWvjZtg5QfrlLnEH4iSwzK93o2AUy2zNiRQ2k="}
+2016/12/02-16:02:26 报文长度：1542
+2016/12/02-16:02:26 连线网上支付平台：成功
+2016/12/02-16:02:26 提交交易报文：成功
+2016/12/02-16:02:26 等待网上支付平台返回交易结果：成功
+2016/12/02-16:02:26 返回报文：
+                    HTTP/1.1 200 OKCache-Control: privateContent-Type: text/html; charset=gb2312Server: Microsoft-IIS/8.5X-AspNet-Version: 4.0.30319Set-Cookie: ASP.NET_SessionId=f0n3plfkdz5mwqld3fftrmlk; path=/; HttpOnlyX-Powered-By: ASP.NETDate: Fri, 02 Dec 2016 08:02:20 GMTConnection: closeSet-Cookie: BIGipServerpool_ebus_ebus=1448733450.64806.0000; path=/{"MSG":{"Message":{"Version":"V3.0.0","Format":"JSON","Merchant":{"ECMerchantType":"EBUS","MerchantID":"103881960110060"},"ReturnCode":"2306","ErrorMessage":"此账单编号已存在","TrxType":"PayReq","OrderNo":"abv1205","PaymentURL":"","OrderAmount":"0.11"},"Signature-Algorithm":"SHA1withRSA","Signature":"pcuM5t07YjMxhUkKiOxQfmtekPy5YelVUIkDz5rv9rASx7oiQ3HzZJtc0DUumzd3p8xmKV7xKV/blNCPcY2N1quOztjWJNw7Qt0TcQR5TRUSAwEilMJ9xU5yaLVlB4rappfBehZPcTGcrTHbnDKiMnaEOyKOINgx+4IRdwlRKu4="}}
+2016/12/02-16:02:26 接收报文：
+2016/12/02-16:02:26 HTTP/1.1 200 OKCache-Control: privateContent-Type: text/html; charset=gb2312Server: Microsoft-IIS/8.5X-AspNet-Version: 4.0.30319Set-Cookie: ASP.NET_SessionId=f0n3plfkdz5mwqld3fftrmlk; path=/; HttpOnlyX-Powered-By: ASP.NETDate: Fri, 02 Dec 2016 08:02:20 GMTConnection: closeSet-Cookie: BIGipServerpool_ebus_ebus=1448733450.64806.0000; path=/{"MSG":{"Message":{"Version":"V3.0.0","Format":"JSON","Merchant":{"ECMerchantType":"EBUS","MerchantID":"103881960110060"},"ReturnCode":"2306","ErrorMessage":"此账单编号已存在","TrxType":"PayReq","OrderNo":"abv1205","PaymentURL":"","OrderAmount":"0.11"},"Signature-Algorithm":"SHA1withRSA","Signature":"pcuM5t07YjMxhUkKiOxQfmtekPy5YelVUIkDz5rv9rASx7oiQ3HzZJtc0DUumzd3p8xmKV7xKV/blNCPcY2N1quOztjWJNw7Qt0TcQR5TRUSAwEilMJ9xU5yaLVlB4rappfBehZPcTGcrTHbnDKiMnaEOyKOINgx+4IRdwlRKu4="}}
+2016/12/02-16:02:26 验证网上支付平台响应报文的签名：正确
+2016/12/02-16:02:26 生成交易响应对象：
+2016/12/02-16:02:26 交易结果：[2306]
+2016/12/02-16:02:26 错误信息：[此账单编号已存在]
+2016/12/02-16:02:26 交易结束==================================================
+2016/12/02-16:04:15 TrustPayClient Java V3.0.2 交易开始==========================
+2016/12/02-16:04:15 检查交易请求是否合法：
+2016/12/02-16:04:15 正确
+2016/12/02-16:04:15 交易报文：
+2016/12/02-16:04:15 完整交易报文：
+2016/12/02-16:04:15 签名后的报文：
+2016/12/02-16:04:15 发送交易报文至网上支付平台：
+2016/12/02-16:04:16 提交网上支付平台的报文：
+                    {"Message":{"Version":"V3.0.0","Format":"JSON","Merchant":{"ECMerchantType":"EBUS","MerchantID":"103881960110060"},"TrxRequest":{"TrxType":"PayReq","PaymentType":"1","PaymentLinkType":"1","ReceiveAccount":"","ReceiveAccName":"","NotifyType":"0","ResultNotifyURL":"http://yijian.zjjnyd.com/yijian/pub/abcPay/return.html","MerchantRemarks":"","IsBreakAccount":"0","SplitAccTemplate":"","Order":{"PayTypeID":"ImmediatePay","OrderDate":"2016/11/14","OrderTime":"10:45:33","orderTimeoutDate":"20171019104901","OrderNo":"abv1205","CurrencyCode":"156","OrderAmount":"0.11","Fee":"1.0","OrderDesc":"","OrderURL":"","ReceiverAddress":"","InstallmentMark":"0","CommodityType":"0101","BuyIP":"","ExpiredDate":"30","OrderItems":[{"SubMerName":"测试二级商户1","SubMerId":"12345","SubMerMCC":"0000","SubMerchantRemarks":"测试","ProductID":"IP000001","ProductName":"中国移动IP卡","UnitPrice":"1.00","Qty":"1","ProductRemarks":"测试商品","ProductType":"充值类","ProductDiscount":"0.9","ProductExpiredDate":"10"},{"SubMerName":"测试二级商户1","SubMerId":"12345","SubMerMCC":"0000","SubMerchantRemarks":"测试","ProductID":"IP000001","ProductName":"中国联通IP卡","UnitPrice":"1.00","Qty":"2","ProductRemarks":"测试商品","ProductType":"充值类","ProductDiscount":"0.9","ProductExpiredDate":"10"}]}}},"Signature-Algorithm":"SHA1withRSA","Signature":"mK+ba/pWRzsJE5hR0En1Lg+Bk6SUlHAzbs2w4IljIpEP4YplafC9xLE3Z4P7x9aO2F2B14/N8YeRLAtRRALZw6Qk+CMMOYCJeQjlEFY5HEh3Bsa0xgF6ctkeo7uET8+tRAg9F1zWvjZtg5QfrlLnEH4iSwzK93o2AUy2zNiRQ2k="}
+2016/12/02-16:04:16 报文长度：1542
+2016/12/02-16:04:16 连线网上支付平台：成功
+2016/12/02-16:04:16 提交交易报文：成功
+2016/12/02-16:04:16 等待网上支付平台返回交易结果：成功
+2016/12/02-16:04:16 返回报文：
+                    HTTP/1.1 200 OKCache-Control: privateContent-Type: text/html; charset=gb2312Server: Microsoft-IIS/8.5X-AspNet-Version: 4.0.30319Set-Cookie: ASP.NET_SessionId=skvxptb41x3htp4nge1tf1bg; path=/; HttpOnlyX-Powered-By: ASP.NETDate: Fri, 02 Dec 2016 08:04:11 GMTConnection: closeSet-Cookie: BIGipServerpool_ebus_ebus=291891978.65062.0000; path=/{"MSG":{"Message":{"Version":"V3.0.0","Format":"JSON","Merchant":{"ECMerchantType":"EBUS","MerchantID":"103881960110060"},"ReturnCode":"2306","ErrorMessage":"此账单编号已存在","TrxType":"PayReq","OrderNo":"abv1205","PaymentURL":"","OrderAmount":"0.11"},"Signature-Algorithm":"SHA1withRSA","Signature":"pcuM5t07YjMxhUkKiOxQfmtekPy5YelVUIkDz5rv9rASx7oiQ3HzZJtc0DUumzd3p8xmKV7xKV/blNCPcY2N1quOztjWJNw7Qt0TcQR5TRUSAwEilMJ9xU5yaLVlB4rappfBehZPcTGcrTHbnDKiMnaEOyKOINgx+4IRdwlRKu4="}}
+2016/12/02-16:04:16 接收报文：
+2016/12/02-16:04:16 HTTP/1.1 200 OKCache-Control: privateContent-Type: text/html; charset=gb2312Server: Microsoft-IIS/8.5X-AspNet-Version: 4.0.30319Set-Cookie: ASP.NET_SessionId=skvxptb41x3htp4nge1tf1bg; path=/; HttpOnlyX-Powered-By: ASP.NETDate: Fri, 02 Dec 2016 08:04:11 GMTConnection: closeSet-Cookie: BIGipServerpool_ebus_ebus=291891978.65062.0000; path=/{"MSG":{"Message":{"Version":"V3.0.0","Format":"JSON","Merchant":{"ECMerchantType":"EBUS","MerchantID":"103881960110060"},"ReturnCode":"2306","ErrorMessage":"此账单编号已存在","TrxType":"PayReq","OrderNo":"abv1205","PaymentURL":"","OrderAmount":"0.11"},"Signature-Algorithm":"SHA1withRSA","Signature":"pcuM5t07YjMxhUkKiOxQfmtekPy5YelVUIkDz5rv9rASx7oiQ3HzZJtc0DUumzd3p8xmKV7xKV/blNCPcY2N1quOztjWJNw7Qt0TcQR5TRUSAwEilMJ9xU5yaLVlB4rappfBehZPcTGcrTHbnDKiMnaEOyKOINgx+4IRdwlRKu4="}}
+2016/12/02-16:04:16 验证网上支付平台响应报文的签名：正确
+2016/12/02-16:04:16 生成交易响应对象：
+2016/12/02-16:04:16 交易结果：[2306]
+2016/12/02-16:04:16 错误信息：[此账单编号已存在]
+2016/12/02-16:04:16 交易结束==================================================
+2016/12/02-16:07:38 TrustPayClient Java V3.0.2 交易开始==========================
+2016/12/02-16:07:38 检查交易请求是否合法：
+2016/12/02-16:07:38 正确
+2016/12/02-16:07:38 交易报文：
+2016/12/02-16:07:38 完整交易报文：
+2016/12/02-16:07:38 签名后的报文：
+2016/12/02-16:07:38 发送交易报文至网上支付平台：
+2016/12/02-16:07:38 提交网上支付平台的报文：
+                    {"Message":{"Version":"V3.0.0","Format":"JSON","Merchant":{"ECMerchantType":"EBUS","MerchantID":"103881960110060"},"TrxRequest":{"TrxType":"PayReq","PaymentType":"1","PaymentLinkType":"1","ReceiveAccount":"","ReceiveAccName":"","NotifyType":"0","ResultNotifyURL":"http://yijian.zjjnyd.com/yijian/pub/abcPay/return.html","MerchantRemarks":"","IsBreakAccount":"0","SplitAccTemplate":"","Order":{"PayTypeID":"ImmediatePay","OrderDate":"2016/11/14","OrderTime":"10:45:33","orderTimeoutDate":"20171019104901","OrderNo":"abv1205","CurrencyCode":"156","OrderAmount":"0.11","Fee":"1.0","OrderDesc":"","OrderURL":"","ReceiverAddress":"","InstallmentMark":"0","CommodityType":"0101","BuyIP":"","ExpiredDate":"30","OrderItems":[{"SubMerName":"测试二级商户1","SubMerId":"12345","SubMerMCC":"0000","SubMerchantRemarks":"测试","ProductID":"IP000001","ProductName":"中国移动IP卡","UnitPrice":"1.00","Qty":"1","ProductRemarks":"测试商品","ProductType":"充值类","ProductDiscount":"0.9","ProductExpiredDate":"10"},{"SubMerName":"测试二级商户1","SubMerId":"12345","SubMerMCC":"0000","SubMerchantRemarks":"测试","ProductID":"IP000001","ProductName":"中国联通IP卡","UnitPrice":"1.00","Qty":"2","ProductRemarks":"测试商品","ProductType":"充值类","ProductDiscount":"0.9","ProductExpiredDate":"10"}]}}},"Signature-Algorithm":"SHA1withRSA","Signature":"mK+ba/pWRzsJE5hR0En1Lg+Bk6SUlHAzbs2w4IljIpEP4YplafC9xLE3Z4P7x9aO2F2B14/N8YeRLAtRRALZw6Qk+CMMOYCJeQjlEFY5HEh3Bsa0xgF6ctkeo7uET8+tRAg9F1zWvjZtg5QfrlLnEH4iSwzK93o2AUy2zNiRQ2k="}
+2016/12/02-16:07:38 报文长度：1542
+2016/12/02-16:07:38 连线网上支付平台：成功
+2016/12/02-16:07:38 提交交易报文：成功
+2016/12/02-16:07:38 等待网上支付平台返回交易结果：成功
+2016/12/02-16:07:38 返回报文：
+                    HTTP/1.1 200 OKCache-Control: privateContent-Type: text/html; charset=gb2312Server: Microsoft-IIS/8.5X-AspNet-Version: 4.0.30319Set-Cookie: ASP.NET_SessionId=xrsdvhru202m030ex1qkmigq; path=/; HttpOnlyX-Powered-By: ASP.NETDate: Fri, 02 Dec 2016 08:07:32 GMTConnection: closeSet-Cookie: BIGipServerpool_ebus_ebus=325446410.65062.0000; path=/{"MSG":{"Message":{"Version":"V3.0.0","Format":"JSON","Merchant":{"ECMerchantType":"EBUS","MerchantID":"103881960110060"},"ReturnCode":"2306","ErrorMessage":"此账单编号已存在","TrxType":"PayReq","OrderNo":"abv1205","PaymentURL":"","OrderAmount":"0.11"},"Signature-Algorithm":"SHA1withRSA","Signature":"pcuM5t07YjMxhUkKiOxQfmtekPy5YelVUIkDz5rv9rASx7oiQ3HzZJtc0DUumzd3p8xmKV7xKV/blNCPcY2N1quOztjWJNw7Qt0TcQR5TRUSAwEilMJ9xU5yaLVlB4rappfBehZPcTGcrTHbnDKiMnaEOyKOINgx+4IRdwlRKu4="}}
+2016/12/02-16:07:38 接收报文：
+2016/12/02-16:07:38 HTTP/1.1 200 OKCache-Control: privateContent-Type: text/html; charset=gb2312Server: Microsoft-IIS/8.5X-AspNet-Version: 4.0.30319Set-Cookie: ASP.NET_SessionId=xrsdvhru202m030ex1qkmigq; path=/; HttpOnlyX-Powered-By: ASP.NETDate: Fri, 02 Dec 2016 08:07:32 GMTConnection: closeSet-Cookie: BIGipServerpool_ebus_ebus=325446410.65062.0000; path=/{"MSG":{"Message":{"Version":"V3.0.0","Format":"JSON","Merchant":{"ECMerchantType":"EBUS","MerchantID":"103881960110060"},"ReturnCode":"2306","ErrorMessage":"此账单编号已存在","TrxType":"PayReq","OrderNo":"abv1205","PaymentURL":"","OrderAmount":"0.11"},"Signature-Algorithm":"SHA1withRSA","Signature":"pcuM5t07YjMxhUkKiOxQfmtekPy5YelVUIkDz5rv9rASx7oiQ3HzZJtc0DUumzd3p8xmKV7xKV/blNCPcY2N1quOztjWJNw7Qt0TcQR5TRUSAwEilMJ9xU5yaLVlB4rappfBehZPcTGcrTHbnDKiMnaEOyKOINgx+4IRdwlRKu4="}}
+2016/12/02-16:07:38 验证网上支付平台响应报文的签名：正确
+2016/12/02-16:07:38 生成交易响应对象：
+2016/12/02-16:07:38 交易结果：[2306]
+2016/12/02-16:07:38 错误信息：[此账单编号已存在]
+2016/12/02-16:07:38 交易结束==================================================

@@ -1,0 +1,60 @@
+<aside id="left-panel">
+
+    <!-- User info -->
+    <!-- end user info -->
+
+    <nav>
+        <!-- NOTE: Notice the gaps after each icon usage <i></i>..
+        Please note that these links work a bit different than
+        traditional href="" links. See documentation for details.
+        -->
+
+        <ul data-smart-menu>
+            <li data-menu-collapse>
+                <a href="#" title="首页"><i class="fa fa-lg fa-fw fa-home"></i> <span class="menu-item-parent">首页</span></a>
+                <ul>
+                    <li data-ui-sref-active="active">
+                        <a data-ui-sref="app.home">首页</a>
+                    </li>
+                    <li data-ui-sref-active="active">
+                        <a data-ui-sref="app.help">帮助</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li data-menu-collapse class="top-menu-invisible">
+                <a href="#"><i class="fa fa-lg fa-fw fa-cube txt-color-blue"></i> <span class="menu-item-parent">用户管理</span></a>
+                <ul>
+                    <li data-ui-sref-active="active">
+                        <a data-ui-sref="app.User"><i class="fa fa-gear"></i>
+                           用户</a>
+                    </li>
+                    <li data-ui-sref-active="active">
+                        <a ui-sref="app.loginf"><i class="fa fa-gear"></i>
+                            loginf</a>
+                    </li>
+                    <li data-ui-sref-active="active">
+                        <a ui-sref="login"><i class="fa fa-gear"></i>
+                            fulllogin</a>
+                    </li>
+                    <li data-ui-sref-active="active">
+                        <a data-ui-sref="app.smartAdmin.prebuiltSkins"><i class="fa fa-picture-o"></i>
+                            member</a>
+                    </li>
+                    <!--<li data-ui-sref-active="active">
+                        <a data-ui-sref="app.smartAdmin.appLayout"><i class="fa fa-cube"></i> {{getWord('App Settings')}}</a>
+                    </li>-->
+                </ul>
+            </li>
+
+        </ul>
+
+        <!-- NOTE: This allows you to pull menu items from server -->
+        <!-- <ul data-smart-menu-items="/api/menu-items.json"></ul> -->
+    </nav>
+
+  <span class="minifyme" data-action="minifyMenu" minify-menu>
+    <i class="fa fa-arrow-circle-left hit"></i>
+  </span>
+
+</aside>

@@ -1,0 +1,149 @@
+<!-- MAIN CONTENT -->
+<div id="content">
+    <h1>用户列表</h1>
+    <p>
+        这里是用户说明
+    </p>
+    <div>
+        <table class="table table-bordered table-striped table-hover smart-form">
+            <thead>
+            <tr>
+                <th style="width:66px;">功能</th>
+                <th>
+                    <label class="checkbox">
+                        <input type="checkbox" name="checkbox-inline" ng-model="checkHead" ng-click="checkHeadAll()">
+                        <i style="margin-top: -18px;"></i>
+                    </label>
+                </th>
+                <th>ID</th>
+                <th>创建时间</th>
+                <th>账号</th>
+                <th>昵称</th>
+                <th>角色</th>
+                <th>状态</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr ng-repeat="obj in list">
+                <td style="width:66px;">
+                    <div class="btn-group dropdown" data-dropdown>
+                        <a class="btn btn-primary" href-void><i class="fa fa-cog"></i>操作</a>
+                        <a class="btn btn-primary dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href-void data-toggle="modal" data-target="#myModal" ng-click="show(obj)">查看</a>
+                            </li>
+                            <li>
+                                <a href-void>修改</a>
+                            </li>
+                            <li>
+                                <a href-void>测试</a>
+                            </li>
+                            <li class="divider">更多功能</li>
+                            <li style="margin-bottom: 5px;">
+                                <a href-void>用户关系</a>
+                            </li>
+                        </ul>
+                    </div><!-- /btn-group -->
+                </td>
+                <td style="width:50px;">
+                    <label class="checkbox">
+                        <input type="checkbox" name="checkbox-inline" ng-model="obj.checked">
+                        <i></i>
+                    </label>
+                </td>
+                <td>{{obj.id}}</td>
+                <td>{{obj.gmtCreateString}}</td>
+                <td>{{obj.username}}</td>
+                <td>{{obj.nickname}}</td>
+                <td>{{obj.roleIdString}}</td>
+                <td>{{obj.statusString}}</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <div id="pg_jqgrid-pager-0" class="ui-pager-control" role="group" style="margin: 50px 0;">
+        <table class="ui-pg-table" style="width:100%;table-layout:fixed;height:100%;" role="row" cellspacing="0" cellpadding="0" border="0">
+            <tbody>
+            <tr>
+                <td id="jqgrid-pager-0_left" align="left">
+                    <table class="ui-pg-table navtable" style="float:left;table-layout:auto;" cellspacing="0" cellpadding="0" border="0">
+                        <tbody>
+                        <tr>
+                            <td class="ui-pg-button ui-corner-all" title="删除选中" id="del_jqgrid-table-0">
+                                <div class="btn btn-sm btn-primary">
+                                    <span class="fa fa-trash-o"></span>
+                                </div>
+                            </td>
+                            <td class="ui-pg-button ui-state-disabled" style="width:4px;">
+                                <span class="ui-separator"></span>
+                            </td>
+                            <td class="ui-pg-button ui-corner-all" title="Find records" id="search_jqgrid-table-0">
+                                <div class="btn btn-sm btn-primary">
+                                    <span class="fa fa-search"></span>
+                                </div>
+                            </td>
+                            <td class="ui-pg-button ui-corner-all" title="Reload Grid" id="refresh_jqgrid-table-0">
+                                <div class="btn btn-sm btn-primary">
+                                    <span class="fa fa-refresh"></span>
+                                </div>
+                            </td>
+                            <td class="ui-pg-button ui-corner-all" id="jqgrid-table-0_iladd" title="Add new row">
+                                <div class="btn btn-sm btn-primary">
+                                    <span class="fa fa-plus"></span></div>
+                            </td>
+                            <td class="ui-pg-button ui-corner-all" id="jqgrid-table-0_iledit" title="Edit selected row">
+                                <div class="btn btn-sm btn-primary">
+                                    <span class="fa fa-pencil"></span></div>
+                            </td>
+                            <td class="ui-pg-button ui-corner-all ui-state-disabled" id="jqgrid-table-0_ilsave" title="Save row">
+                                <div class="btn btn-sm btn-success">
+                                    <span class="fa fa-save"></span>
+                                </div>
+                            </td>
+                            <td class="ui-pg-button ui-corner-all ui-state-disabled" id="jqgrid-table-0_ilcancel" title="Cancel row editing">
+                                <div class="btn btn-sm btn-danger">
+                                    <span class="fa fa-times"></span>
+                                </div>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </td>
+                <td id="jqgrid-pager-0_center" align="center">
+                    <table style="table-layout:auto;" class="ui-pg-table" cellspacing="0" cellpadding="0" border="0">
+                        <tbody>
+                        <tr>
+                            <td id="first_jqgrid-pager-0" class="ui-pg-button ui-corner-all" >
+                                <div class="btn btn-sm btn-default" ng-disabled="page.pageNo==1" ng-click="pageTop();">
+                                    <span class="fa fa-fast-backward"></span>
+                                </div>
+                            </td>
+                            <td id="prev_jqgrid-pager-0" class="ui-pg-button ui-corner-all">
+                                <div class="btn btn-sm btn-default" ng-disabled="page.pageNo==1" ng-click="pageBack();">
+                                    <span class="fa fa-backward"></span>
+                                </div>
+                            </td>
+                            <td class="ui-pg-button ui-state-disabled" style="width:4px;">
+                                <span class="ui-separator"></span>
+                            </td>
+                            <td dir="ltr">第<input class="ui-pg-input" size="2" maxlength="7" ng-model="page.pageNo" role="textbox" type="text" ng-keyup="pageNoKeyup($event)" >页，共<span id="sp_1_jqgrid-pager-0">{{page.totalpage}}</span>页</td>
+                            <td class="ui-pg-button ui-state-disabled" style="width:4px;"><span class="ui-separator"></span></td>
+                            <td id="next_jqgrid-pager-0" class="ui-pg-button ui-corner-all"><div class="btn btn-sm btn-default" ng-disabled="page.pageNo==page.totalpage" ng-click="pageForword();"><span class="fa fa-forward"></span></div></td>
+                            <td id="last_jqgrid-pager-0" class="ui-pg-button ui-corner-all"><div class="btn btn-sm btn-default" ng-disabled="page.pageNo==page.totalpage" ng-click="pageButtom();"><span class="fa fa-fast-forward"></span></div></td>
+                            <td dir="ltr">
+                                <select class="ui-pg-selbox" role="listbox" ng-model="page.pageSize" ng-change="query()" ng-options="x for x in [30,50,100]"></select>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </td>
+                <td id="jqgrid-pager-0_right" align="right">
+                    <div dir="ltr" style="text-align:right" class="ui-paging-info">共{{page.dbsize}}条记录</div>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<!-- END MAIN CONTENT -->
