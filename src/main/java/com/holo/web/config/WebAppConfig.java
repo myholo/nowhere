@@ -3,13 +3,19 @@
  */
 package com.holo.web.config;
 
+import com.holo.web.filter.CsrfFilter;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
+import org.springframework.boot.web.servlet.FilterRegistrationBean;
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
 
 import com.holo.web.interceptor.UserInterceptor;
+
+import java.util.ArrayList;
+import java.util.List;
 
 
 /**
@@ -40,4 +46,15 @@ public class WebAppConfig extends WebMvcConfigurerAdapter{
 		
 	}
 
+	//@Bean
+	public FilterRegistrationBean getCsrfFilter(){
+		CsrfFilter csrfFilter=new CsrfFilter();
+		FilterRegistrationBean registrationBean=new FilterRegistrationBean();
+		registrationBean.setFilter(csrfFilter);
+		List<String> urlPatterns=new ArrayList<String>();
+		urlPatterns.add("/*");//拦截路径，可以添加多个
+		registrationBean.setUrlPatterns(urlPatterns);
+		registrationBean.setOrder(1);
+		return registrationBean;
+	}
 }

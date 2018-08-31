@@ -3,7 +3,7 @@ package com.holo.service.spec;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
-import net.minidev.json.JSONUtil;
+
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DataAccessException;
@@ -50,7 +50,7 @@ public class SpecRedisService{
     }  
   
 
-    /*public <T> boolean setList(String key, List<T> list) {  
+    /*public <T> boolean setList(String key, List<T> list) {
         String value = JSONUtil.toJson(list);  
         return set(key,value);  
     }  
@@ -106,4 +106,4 @@ public class SpecRedisService{
         return result;  
     }  
   
-}  
+}

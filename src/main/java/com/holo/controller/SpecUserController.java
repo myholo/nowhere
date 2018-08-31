@@ -23,7 +23,7 @@ public class SpecUserController {
 	
 	@GetMapping("/{id}")
 	public User findById(@PathVariable Integer id){
-		
+		System.err.println(222);
 		if(specRedisService.get("user_"+id)!=null){
 			String json= specRedisService.get("user_"+id);
 	        User user = JSON.parseObject(json, new TypeReference<User>() {});

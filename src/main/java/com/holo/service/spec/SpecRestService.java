@@ -12,14 +12,14 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.holo.common.exception.HoException;
-import com.zmax.common.exception.BoException;
+/*import com.zmax.common.exception.BoException;
 import com.zmax.common.exception.NeedLoginException;
 import com.zmax.common.exception.RightException;
 import com.zmax.common.utils.qr.QRCodeUtil;
 import com.zmax.hos.domain.bean.Article;
 import com.zmax.hos.domain.bean.User;
 import com.zmax.hos.web.controller.restful.entity.ClientInfo;
-import com.zmax.hos.web.controller.restful.entity.RestPage;
+import com.zmax.hos.web.controller.restful.entity.RestPage;*/
 
 /**
  * @author Holo
@@ -42,6 +42,6 @@ public class SpecRestService {
 			if(!qrcodeParent.exists()){
 				qrcodeParent.mkdirs();
 			}
-		QRCodeUtil.encoderQRCode(content, realPath, "jpg");
+		//QRCodeUtil.encoderQRCode(content, realPath, "jpg");
 	}
 }

@@ -103,5 +103,10 @@ public class User extends BaseEntity{
 				+ gmtModified + ", status=" + status + ", roleId=" + roleId
 				+ ", username=" + username + ", password=" + password + "]";
 	}
-	
+
+	public User(Integer id, String username, String password) {
+		this.id = id;
+		this.username = username;
+		this.password = password;
+	}
 }

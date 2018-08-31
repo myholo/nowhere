@@ -17,6 +17,8 @@ public interface UserService{
 	User loginCheck(User user) throws HoException;
 
 	Json createUser(User user) throws Exception;
+
+
 	
 	void save(User sessionUser,User user);
 	

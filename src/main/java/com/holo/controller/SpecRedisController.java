@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.holo.service.impl.UserServiceImpl;
 import com.holo.service.spec.SpecRedisService;
-import com.jcraft.jsch.Session;
+
 
 @RestController
 @RequestMapping(value="/rest")  

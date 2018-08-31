@@ -10,8 +10,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+import com.holo.annotation.lock.HoloLog;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -45,6 +45,7 @@ public class UserRestController {
 	}
 	
 	@RequestMapping(value="/xxx",method=RequestMethod.GET)
+	@HoloLog("12345")
 	public Json xxx(){
 		return new Json(true,"登录成功！");
 	}

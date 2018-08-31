@@ -40,7 +40,7 @@ prop:
     #/**默认的管理员密码*/
     adminpwd: admin123
     #file:///d:/opt/sts 
-    hddir: file:///E:/git_work/nowhere/src/main/webapp
+    hddir: file:///F:/git-study/nowhere/src/main/webapp
 #应用配置
   me:
   #/**辅助节点名称 空着或main表示主服务*/
@@ -78,7 +78,7 @@ prop:
   #/**支付宝的appid*/
      alipayappid: 2017062707580890   
 server:
-  port: 80
+  port: 8080
   context-path: ${prop.sys.base}
 # tomcat最大线程数，默认为200
   tomcat:
@@ -114,6 +114,10 @@ spring:
     test-on-borrow: false
     test-on-return: false
     validation-query: select 1
+  security:
+    oauth2:
+      resource:
+        filter-order: 3
   jpa:
     hibernate:
       ddl-auto: update
@@ -122,7 +126,14 @@ spring:
         current_session_context_class: org.springframework.orm.hibernate5.SpringSessionContext
         show_sql: false
         cache:
-          use_second_level_cache: false        
+          use_second_level_cache: false
+  redis:
+     hostName=127.0.0.1
+     port=6379
+     pool.maxWait=-1
+     pool.maxIdle=8
+     pool.minIdle=0
+     timeout=0
   resources:
     #${prop.my.hddir}/static/, file:///D:/z_java/yj/sts/trunk/src/main/webapp/static/   
     static-locations: ${prop.my.hddir}/static/
@@ -202,7 +213,7 @@ spring:
     pool.maxWait=-1    
     pool.maxIdle=8    
     pool.minIdle=0    
-    timeout=0  
+    timeout=0
 prop:
   my:
     name: zmax_PROD_LINUX

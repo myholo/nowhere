@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.codehaus.groovy:groovy-eclipse-compiler:2.7.0-01">
+    <CLASSES>
+      <root url="jar://D:/opt/lib/Repositories/org/codehaus/groovy/groovy-eclipse-compiler/2.7.0-01/groovy-eclipse-compiler-2.7.0-01.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://D:/opt/lib/Repositories/org/codehaus/groovy/groovy-eclipse-compiler/2.7.0-01/groovy-eclipse-compiler-2.7.0-01-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://D:/opt/lib/Repositories/org/codehaus/groovy/groovy-eclipse-compiler/2.7.0-01/groovy-eclipse-compiler-2.7.0-01-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -35,8 +35,9 @@ public class UserInterceptor implements HandlerInterceptor{
 		HttpSession session=(request==null)?null:request.getSession();
     	UUID uid = (UUID) session.getAttribute("uid");
         if (uid == null) {
-        	//User user=userServiceImpl.getFirst(sessionUser, where, order, params);
-           return false;
+        	//\User user=userServiceImpl.getFirst(sessionUser, where, order, params);
+          System.err.print("被拦截了。。。。。。。。。。");
+           return true;
         }
         return true;
 	}

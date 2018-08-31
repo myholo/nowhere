@@ -1,3 +1,4 @@
+/*
 package com.holo.service.spec;
 
 import java.io.UnsupportedEncodingException;
@@ -13,6 +14,7 @@ import com.holo.common.bean.ApAppapiPaymentParam;
 
 
 
+*/
 /**
  * 
  * @author Holo
@@ -20,7 +22,8 @@ import com.holo.common.bean.ApAppapiPaymentParam;
  * 阿里支付  两种方式
  * app支付 调用方法获取一个String 剩下的交给app去做
  * 网页支付   调用方法获取form
- */
+ *//*
+
 public class SpecAlipayService {
 	private  final Log logger = LogFactory.getLog(getClass());
 	
@@ -31,13 +34,15 @@ public class SpecAlipayService {
 	// 支付宝的公钥
 	static String ALIPAY_PUBKEY_QUERY2017="";
 
-	/**
+	*/
+/**
 	 * 根据支付宝app支付参数，进行签名等工作，获取手机需要的orderinfo(orderStr  主要包含商户的订单信息，key=“value”形式，以&连接。 )
 	 * @param apAppapiPaymentParam 支付宝app支付参数
 	 * @return String 主要包含商户的订单信息，key=“value”形式，以&连接
 	 * @throws UnsupportedEncodingException 
 	 * @throws AlipayApiException 
-	 */
+	 *//*
+
 	public String takeOrderinfo(ApAppapiPaymentParam apAppapiPaymentParam) throws UnsupportedEncodingException, AlipayApiException{
 		StringBuffer orderInfo = new StringBuffer();
 		// 签约合作者身份ID
@@ -78,7 +83,8 @@ public class SpecAlipayService {
 		return orderInfo.toString();
 	}
 	
-	/**
+	*/
+/**
 	 * 商品订单转支付宝参数
 	 * 4 后台根据订单OrderrXxx生成WaUnifiedPaymentParam 微信统一下单请求对象
 	 * 订单转微信统一下单请求对象
@@ -86,7 +92,8 @@ public class SpecAlipayService {
 	 * @return ApAppapiPaymentParam 支付宝app支付参数
 	 * @throws BoException
 	 * @throws Exception
-	 */
+	 *//*
+
 	private ApAppapiPaymentParam orderrToApAppapiPaymentParam()throws Exception{
 		String body="";//商品或者支付单简要说明
 		String outTradeNo="AA"+String.valueOf(123);//订单号=2位字母+订单id
@@ -116,3 +123,4 @@ public class SpecAlipayService {
 		return apAppapiPaymentParam;
 	}
 }
+*/
